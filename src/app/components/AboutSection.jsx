@@ -154,7 +154,8 @@ export function AboutSection() {
               Established with a passion for creativity and a commitment to
               excellence, Upstairs has been transforming spaces since 2009. With
               a keen eye for detail and a focus on innovation, we strive to
-              exceed our clients' expectations with every project we undertake.
+              exceed our clients&apos; expectations with every project we
+              undertake.
             </motion.p>
             <motion.button
               className="bg-buttoncolor hover:bg-neutral-700 text-white rounded-full px-8 py-2"

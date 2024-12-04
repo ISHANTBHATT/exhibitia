@@ -69,7 +69,7 @@ export default function Faq2() {
           <div className="absolute bottom-6 left-6 right-6 bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-2">Still Have Questions?</h3>
             <p className="text-muted-foreground mb-4">
-              Can't find the answer you're looking for? Write to us at
+              Can&apos;t find the answer you&apos;re looking for? Write to us at
               help@gmail.com or contact us through (+11) 111-222-3333.
             </p>
             <Button variant="outline" className="gap-2">
