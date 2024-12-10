@@ -252,7 +252,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="pt-20 pb-12 sm:px-10 bg-neutral-800" ref={ref}>
+    <section className="pt-20 pb-12 sm:px-10 bg-secondary" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           className="mb-12 flex"
@@ -279,7 +279,7 @@ export function HeroSection() {
             className="flex flex-col justify-center"
             variants={itemVariants}
           >
-            <p className="text-lg text-muted-foreground max-w-2xl text-gray-400">
+            <p className="text-lg max-w-2xl text-gray-50">
               From modern minimalism to timeless elegance, our portfolio
               showcases a spectrum of design styles and inspirations. Discover
               how we turn visions into captivating realities, one space at a

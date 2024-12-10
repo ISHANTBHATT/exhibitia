@@ -16,13 +16,21 @@ module.exports = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // primary: "#FFFAE7",
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#C48D46",
           foreground: "hsl(var(--secondary-foreground))",
         },
         textcolor: "#515151",
         //   buttoncolor: '#266763',
         buttoncolor: "#171717",
+        // #FFFAE7
+        // #FAF7F0
+
+        // #C48D46
+        // #e9d9c0
+        // #b78442
+        // #deb276
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -32,7 +40,7 @@ module.exports = {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#FFFAE7",
           foreground: "hsl(var(--primary-foreground))",
         },
         muted: {

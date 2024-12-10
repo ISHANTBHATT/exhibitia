@@ -123,7 +123,7 @@ export function AboutSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 sm:px-10" ref={ref}>
+    <section className="py-16 md:py-24 sm:px-10 bg-primary" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"

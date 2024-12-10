@@ -88,7 +88,7 @@ export default function Banner() {
         playsInline
         className="absolute inset-0 object-cover w-full h-full"
       >
-        <source src="videoplayback.mp4" type="video/mp4" />
+        <source src="/images/videoplayback.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Social Links */}

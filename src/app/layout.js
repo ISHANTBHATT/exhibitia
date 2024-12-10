@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Outfit } from "next/font/google";
 import { Footer } from "./components/Footer";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,9 +37,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} antialiased`}
       >
-        {/* <Navbar /> */}
-        {children}
-        {/* <Footer /> */}
+        <LazyMotion features={domAnimation}>
+          {/* <Navbar /> */}
+          {children}
+          {/* <Footer /> */}
+        </LazyMotion>
       </body>
     </html>
   );

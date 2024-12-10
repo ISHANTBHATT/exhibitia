@@ -104,7 +104,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white" ref={ref}>
+    <main className="min-h-screen bg-primary" ref={ref}>
       {/* Header Section */}
       <motion.section
         className="container mx-auto px-4 py-12 text-center"
@@ -189,7 +189,7 @@ export default function Home() {
 
           {/* Stats Section */}
           <motion.div
-            className="bg-neutral-800 text-white p-8 rounded-xl"
+            className="bg-secondary text-white p-8 rounded-xl"
             variants={itemVariants}
           >
             <div className="grid grid-cols-3 gap-4 text-center">

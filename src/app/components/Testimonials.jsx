@@ -368,7 +368,7 @@ export const Testimonials = ({ testimonials, autoplay = false }) => {
           <div className="flex gap-4 pt-12 md:pt-0">
             <motion.button
               onClick={handlePrev}
-              className="h-10 w-10 rounded-full bg-neutral-800 flex items-center justify-center group/button"
+              className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center group/button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -376,7 +376,7 @@ export const Testimonials = ({ testimonials, autoplay = false }) => {
             </motion.button>
             <motion.button
               onClick={handleNext}
-              className="h-10 w-10 rounded-full bg-neutral-800 flex items-center justify-center group/button"
+              className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center group/button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

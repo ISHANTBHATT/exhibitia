@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed w-full z-50 sm:px-6  font-cormorant border-b-[0.1px] border-gray-300 ${
         isScrolled || !isHomePage
-          ? "bg-neutral-900 text-white"
+          ? "bg-secondary text-white"
           : "bg-transparent text-white"
       }`}
     >
@@ -50,7 +50,7 @@ export default function Navbar() {
                 Home
               </a>
               <a
-                href="/home2"
+                href="/gallery"
                 className="text-lg font-medium hover:text-gray-500"
               >
                 Gallery
@@ -61,10 +61,16 @@ export default function Navbar() {
               >
                 Services
               </a>
-              <a href="#" className="text-lg font-medium hover:text-gray-500">
+              <a
+                href="/contact"
+                className="text-lg font-medium hover:text-gray-500"
+              >
                 Contact
               </a>
-              <a href="#" className="text-lg font-medium hover:text-gray-500">
+              <a
+                href="/about"
+                className="text-lg font-medium hover:text-gray-500"
+              >
                 About
               </a>
             </div>

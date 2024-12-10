@@ -66,13 +66,13 @@ export default function Faq() {
             alt="Interior design showcase"
             className="w-full h-full object-cover rounded-lg"
           />
-          <div className="absolute bottom-6 left-6 right-6 bg-white p-6 rounded-lg shadow-lg">
+          <div className="absolute bottom-6 left-6 right-6 bg-secondary p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-2">Still Have Questions?</h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-gray-50 mb-4">
               Can&apos;t find the answer you&apos;re looking for? Write to us at
               help@gmail.com or contact us through (+11) 111-222-3333.
             </p>
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2 bg-[#deb276]">
               <FiMessageCircle className="w-4 h-4" />
               Contact Support
             </Button>

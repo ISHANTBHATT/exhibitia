@@ -98,7 +98,7 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <div className="min-h-screen relative overflow-hidden font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen relative overflow-hidden font-[family-name:var(--font-geist-sans)] bg-primary">
       <Homepage />
     </div>
   );

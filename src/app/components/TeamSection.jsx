@@ -120,7 +120,7 @@ export default function TeamSection() {
   };
 
   return (
-    <section className="py-16 px-4 bg-neutral-800 text-white" ref={ref}>
+    <section className="py-16 px-4 bg-secondary text-white" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -147,7 +147,7 @@ export default function TeamSection() {
         >
           {team.map((member) => (
             <motion.div key={member.name} variants={itemVariants}>
-              <Card className="overflow-hidden bg-neutral-700 border-none">
+              <Card className="overflow-hidden bg-[#deb276] border-none">
                 <motion.img
                   src={member.image}
                   alt={member.name}
@@ -167,7 +167,7 @@ export default function TeamSection() {
         <motion.div className="text-center mt-12" variants={itemVariants}>
           <Button
             variant="outline"
-            className="bg-neutral-700"
+            className="bg-[#deb276]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
