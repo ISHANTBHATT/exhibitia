@@ -362,7 +362,7 @@ export function HeroSection() {
         </motion.div>
         <motion.div className="mt-12 text-center" variants={itemVariants}>
           <motion.button
-            className="bg-buttoncolor hover:bg-neutral-700 text-white rounded-3xl px-4 py-3"
+            className="bg-[#b78442] hover:bg-[#deb276] text-white rounded-3xl px-4 py-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

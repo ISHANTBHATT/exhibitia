@@ -167,7 +167,7 @@ export default function TeamSection() {
         <motion.div className="text-center mt-12" variants={itemVariants}>
           <Button
             variant="outline"
-            className="bg-[#deb276]"
+            className="bg-[#deb276] hover:bg-[#b78442]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
