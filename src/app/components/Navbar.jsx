@@ -34,9 +34,9 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="flex items-center gap-2 border-r-[0.1px] border-gray-300">
+            <div className="flex items-center gap-2 border-r-[0.1px] border-neutral-800">
               <Image
-                src="/images/logo2.png"
+                src="/images/logo.png"
                 alt="logo"
                 width={150}
                 height={150}
