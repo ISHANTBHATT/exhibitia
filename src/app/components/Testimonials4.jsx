@@ -65,7 +65,7 @@ export function Testimonials4() {
           priority
         />
       </div>
-      <div className="bg-[#8B8165] text-white p-8 lg:p-16 flex flex-col justify-center">
+      <div className="bg-secondary text-white p-8 lg:p-16 flex flex-col justify-center">
         <div className="">
           <p className="text-sm tracking-wider mb-4">CLIENT REVIEWS</p>
           <h2 className="text-5xl font-normal mb-8">Feedback From Clients</h2>
@@ -79,14 +79,14 @@ export function Testimonials4() {
           <div className="flex gap-4">
             <button
               onClick={prevTestimonial}
-              className="p-4 rounded-full bg-black/20 hover:bg-black/30 transition-colors"
+              className="p-4 rounded-full bg-neutral-700 hover:bg-neutral-600 transition-colors"
               aria-label="Previous testimonial"
             >
               <ArrowLeft className="w-6 h-6" />
             </button>
             <button
               onClick={nextTestimonial}
-              className="p-4 rounded-full bg-black/20 hover:bg-black/30 transition-colors"
+              className="p-4 rounded-full bg-neutral-700 hover:bg-neutral-600 transition-colors"
               aria-label="Next testimonial"
             >
               <ArrowRight className="w-6 h-6" />

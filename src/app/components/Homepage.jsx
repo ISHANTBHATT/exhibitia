@@ -53,7 +53,7 @@ function Homepage() {
   ];
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
       <Clients />
       <AboutSection />
@@ -64,7 +64,7 @@ function Homepage() {
       <TeamSection />
       <Faq />
       {/* <Feedback /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

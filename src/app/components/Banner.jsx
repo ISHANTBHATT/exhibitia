@@ -135,7 +135,7 @@ export default function Banner() {
             Know More
             <span className="ml-2">→</span>
           </button> */}
-          <button className="bg-secondary hover:bg-[#b78442] text-white px-8 py-3 inline-flex items-center gap-2 rounded-full transition-colors">
+          <button className="bg-secondary hover:bg-neutral-700 text-white px-8 py-3 inline-flex items-center gap-2 rounded-full transition-colors">
             Know More
             <span className="ml-2">→</span>
           </button>

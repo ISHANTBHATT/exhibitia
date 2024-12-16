@@ -26,25 +26,25 @@ export function Footer() {
             <div className="flex space-x-6 mt-6">
               <a
                 href="#"
-                className="text-white  bg-[#deb276] hover:bg-neutral-800 rounded-full p-4"
+                className="text-white  bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <FaFacebookF className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-white bg-[#deb276] hover:bg-neutral-800 rounded-full p-4"
+                className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <IoLogoInstagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-white bg-[#deb276] hover:bg-neutral-800 rounded-full p-4"
+                className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <FaYoutube className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-white bg-[#deb276] hover:bg-neutral-800 rounded-full p-4"
+                className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <IoIosMail className="h-5 w-5" />
               </a>
@@ -64,26 +64,26 @@ export function Footer() {
               <IoIosMail className="h-5 w-5" />
             </a> */}
 
-            <p className="text-gray-200 hover:text-white cursor-pointer">
+            <p className="text-gray-400 hover:text-white cursor-pointer">
               Home
             </p>
-            <p className="text-gray-200 hover:text-white cursor-pointer">
+            <p className="text-gray-400 hover:text-white cursor-pointer">
               Gallery
             </p>
-            <p className="text-gray-200 hover:text-white cursor-pointer">
+            <p className="text-gray-400 hover:text-white cursor-pointer">
               Services
             </p>
-            <p className="text-gray-200 hover:text-white cursor-pointer">
+            <p className="text-gray-400 hover:text-white cursor-pointer">
               Contact
             </p>
-            <p className="text-gray-200 hover:text-white cursor-pointer">
+            <p className="text-gray-400 hover:text-white cursor-pointer">
               About
             </p>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t text-center text-sm text-gray-200">
+        <div className="mt-8 pt-8 border-t text-center text-sm text-white">
           <p>Exhibitia © 2024. All Rights Reserved</p>
-          <div className="mt-2 space-x-4">
+          <div className="mt-2 space-x-4 text-gray-400">
             <a href="#" className="hover:text-white">
               Terms & Conditions
             </a>

@@ -147,7 +147,7 @@ export default function TeamSection() {
         >
           {team.map((member) => (
             <motion.div key={member.name} variants={itemVariants}>
-              <Card className="overflow-hidden bg-[#deb276] border-none">
+              <Card className="overflow-hidden bg-neutral-700 border-none">
                 <motion.img
                   src={member.image}
                   alt={member.name}
@@ -167,7 +167,7 @@ export default function TeamSection() {
         <motion.div className="text-center mt-12" variants={itemVariants}>
           <Button
             variant="outline"
-            className="bg-[#deb276] hover:bg-[#b78442]"
+            className="bg-secondary"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

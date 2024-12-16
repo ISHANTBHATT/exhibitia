@@ -104,7 +104,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-primary" ref={ref}>
+    <main className="min-h-screen" ref={ref}>
       {/* Header Section */}
       <motion.section
         className="container mx-auto px-4 py-12 text-center"
@@ -138,6 +138,8 @@ export default function Home() {
         {/* Left Column */}
         <motion.div
           className="relative overflow-hidden rounded-xl"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
           variants={itemVariants}
         >
           <Image

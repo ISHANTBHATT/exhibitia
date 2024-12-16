@@ -58,8 +58,8 @@ export default async function GalleryPage() {
   const photos = await getPhotos();
 
   return (
-    <div className="container mx-auto py-12 bg-[#FFFAE7] min-h-screen">
-      <h1 className="text-4xl font-bold mb-8 text-center text-indigo-800">
+    <div className="w-full  py-32 min-h-screen">
+      <h1 className="text-4xl font-bold mb-8 text-center text-secondary">
         Inspiring Gallery
       </h1>
       <Suspense fallback={<div>Loading...</div>}>

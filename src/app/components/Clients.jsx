@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Clients() {
   return (
-    <div className="relative flex flex-col gap-8 overflow-hidden bg-primary py-20">
+    <div className="relative flex flex-col gap-8 overflow-hidden py-20">
       {/* Top row - moving right */}
       <div className="flex w-full">
         <div className="animate-marquee-right flex min-w-full shrink-0 items-center justify-around gap-8">

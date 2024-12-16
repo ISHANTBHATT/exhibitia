@@ -25,10 +25,10 @@ import { Team } from "../components/Team";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white py-10">
       {/* Hero Section */}
-      <div className="relative h-[200px] bg-zinc-800">
-        <div className="absolute inset-0 bg-black/60">
+      <div className="relative h-[200px] bg-secondary">
+        <div className="absolute inset-0 bg-secondary">
           <div className="container mx-auto px-4 h-full flex flex-col justify-end pb-8">
             <h1 className="text-6xl font-bold text-white mb-2">About</h1>
             <div className="text-white/80 flex items-center gap-2 text-sm">
@@ -46,7 +46,7 @@ export default function AboutPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-wrap lg:flex-nowrap gap-8 items-start">
           {/* Stats Section */}
-          <div className="bg-[#8B8165] p-8 text-white w-full lg:w-1/5">
+          <div className="bg-secondary p-8 text-white w-full lg:w-1/5">
             <div className="grid grid-cols-4 gap-2 mb-8">
               {[...Array(16)].map((_, i) => (
                 <div
@@ -90,10 +90,26 @@ export default function AboutPage() {
               Best Way To Design Your Home, Office, Etc.
             </h2>
             <p className="text-gray-600 mb-8">
-              Magna inceptos purus tempor cursus pulvinar magnis libero eu.
-              Conubia orci vulputate neque fermentum ultricies penatibus.Laoreet
-              aptent arcu maximus curabitur non. Conubia orci vulputate inceptos
-              purus tempor cursus pulvinar.
+              We provide professional services at exhibition shows . Our
+              original Concepts allow you to focus on promoting your brand while
+              we deliver highly innovative exhibition stand installations within
+              timescales and budgets. Exhibitia Retail Branding & Interiors
+              designs are based on detailed market research, its preferences and
+              sensibilities. Our integrated retail branding approach balances
+              business and aesthetics needs. We at exhibitia Retail designs,
+              build and install interiors including wide range of furniture and
+              lighting solutions, we also create point of purchase, in-store
+              branding containing kiosks, menu boards and display units. We are
+              offering wide range of retail services having design and market
+              strategy, visual communication design, conceptual positioning,
+              brand/logo identity, development and implementation, material
+              procurement, furniture/fixture and construction administration. We
+              assist organizations to make their brands Breathe. Exhibitia
+              produces superb corporate events: creatively conceived,
+              strategically planned and beautifully executed. Impeccable in
+              every detail of design and ambience, we provide a Perfect Platform
+              for building your brand and the relationships most important to
+              you.
             </p>
 
             {/* Services Grid */}
@@ -179,7 +195,7 @@ export default function AboutPage() {
             </div>
 
             {/* Know More Button */}
-            <button className="mt-8 bg-[#8B8165] text-white px-6 py-3 flex items-center gap-2 hover:bg-[#776F57] transition-colors text-sm">
+            <button className="mt-8 bg-secondary text-white px-6 py-3 flex items-center gap-2 hover:bg-neutral-700 rounded-full transition-colors text-sm">
               Know More
               <ArrowRight className="w-4 h-4" />
             </button>

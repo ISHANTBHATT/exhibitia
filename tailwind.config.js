@@ -18,7 +18,7 @@ module.exports = {
         foreground: "hsl(var(--foreground))",
         // primary: "#FFFAE7",
         secondary: {
-          DEFAULT: "#C48D46",
+          DEFAULT: "#262626",
           foreground: "hsl(var(--secondary-foreground))",
         },
         textcolor: "#515151",
@@ -26,11 +26,14 @@ module.exports = {
         buttoncolor: "#171717",
         // #FFFAE7
         // #FAF7F0
+        // #FFF5E4
 
         // #C48D46
         // #e9d9c0
         // #b78442
         // #deb276
+        // #9F7038
+        // #94642A
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
