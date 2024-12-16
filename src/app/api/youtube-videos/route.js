@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const channelId = process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID;
-    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
-    const apiURL = process.env.NEXT_PUBLIC_YOUTUBE_API_URL;
+    const channelId = process.env.YOUTUBE_CHANNEL_ID;
+    const apiKey = process.env.YOUTUBE_API_KEY;
+    const apiURL = process.env.YOUTUBE_API_URL;
 
     if (!channelId || !apiKey || !apiURL) {
       throw new Error("Missing environment variables");
