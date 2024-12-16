@@ -51,7 +51,7 @@ export default function Navbar() {
 
             {/* Navigation Links */}
             <div className="hidden lg:flex w-full space-x-20 px-10">
-              <a href="#" className="text-lg font-medium hover:text-gray-500">
+              <a href="/" className="text-lg font-medium hover:text-gray-500">
                 Home
               </a>
               <a
@@ -61,7 +61,7 @@ export default function Navbar() {
                 Gallery
               </a>
               <a
-                href="/home3"
+                href="/services"
                 className="text-lg font-medium hover:text-gray-500"
               >
                 Services
