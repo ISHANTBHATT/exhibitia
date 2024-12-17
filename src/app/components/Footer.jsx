@@ -4,6 +4,7 @@ import { IoLogoInstagram, IoIosMail } from "react-icons/io";
 import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { FaYoutube, FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-secondary border-t">
@@ -64,21 +65,36 @@ export function Footer() {
               <IoIosMail className="h-5 w-5" />
             </a> */}
 
-            <p className="text-gray-400 hover:text-white cursor-pointer">
-              Home
-            </p>
-            <p className="text-gray-400 hover:text-white cursor-pointer">
-              Gallery
-            </p>
-            <p className="text-gray-400 hover:text-white cursor-pointer">
-              Services
-            </p>
-            <p className="text-gray-400 hover:text-white cursor-pointer">
-              Contact
-            </p>
-            <p className="text-gray-400 hover:text-white cursor-pointer">
-              About
-            </p>
+            <Link href="/">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                Home
+              </p>
+            </Link>
+            <Link href="/gallery">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                Gallery
+              </p>
+            </Link>
+            <Link href="/services">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                Services
+              </p>
+            </Link>
+            <Link href="/careers">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                Careers
+              </p>
+            </Link>
+            <Link href="/contact">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                Contact
+              </p>
+            </Link>
+            <Link href="/about">
+              <p className="text-gray-400 hover:text-white cursor-pointer">
+                About
+              </p>
+            </Link>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-white">

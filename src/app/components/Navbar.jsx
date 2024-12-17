@@ -52,25 +52,30 @@ export default function Navbar() {
             {/* Navigation Links */}
             <div className="hidden lg:flex w-full space-x-20 px-10">
               <Link href="/">
-                <a className="text-lg font-medium hover:text-gray-500">Home</a>
+                <p className="text-lg font-medium hover:text-gray-500">Home</p>
               </Link>
               <Link href="/gallery">
-                <a className="text-lg font-medium hover:text-gray-500">
+                <p className="text-lg font-medium hover:text-gray-500">
                   Gallery
-                </a>
+                </p>
               </Link>
               <Link href="/services">
-                <a className="text-lg font-medium hover:text-gray-500">
+                <p className="text-lg font-medium hover:text-gray-500">
                   Services
-                </a>
+                </p>
+              </Link>
+              <Link href="/careers">
+                <p className="text-lg font-medium hover:text-gray-500">
+                  Careers
+                </p>
               </Link>
               <Link href="/contact">
-                <a className="text-lg font-medium hover:text-gray-500">
+                <p className="text-lg font-medium hover:text-gray-500">
                   Contact
-                </a>
+                </p>
               </Link>
               <Link href="/about">
-                <a className="text-lg font-medium hover:text-gray-500">About</a>
+                <p className="text-lg font-medium hover:text-gray-500">About</p>
               </Link>
             </div>
 
