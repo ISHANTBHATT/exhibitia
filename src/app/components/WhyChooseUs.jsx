@@ -102,12 +102,12 @@ export default function WhyChooseUs() {
               <Rocket className="w-6 h-6 text-neutral-700" />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900">
-              Let's Create Something Amazing
+              Let&apos;s Create Something Amazing
             </h3>
             <p className="text-gray-600">
-              We believe every brand has a story worth sharing, and we're here
-              to help you tell it in the most compelling way. Let's collaborate
-              to make your next event a memorable success.
+              We believe every brand has a story worth sharing, and we&apos;re
+              here to help you tell it in the most compelling way. Let&apos;s
+              collaborate to make your next event a memorable success.
             </p>
           </motion.div>
 

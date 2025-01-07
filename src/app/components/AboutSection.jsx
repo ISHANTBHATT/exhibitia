@@ -166,8 +166,8 @@ export function AboutSection() {
               Custom Solutions:
               <span className="font-normal">
                 {" "}
-                We understand that every event is different. That's why we offer
-                customized booth solutions, including modular designs,
+                We understand that every event is different. That&apos;s why we
+                offer customized booth solutions, including modular designs,
                 interactive displays, and immersive experiences tailored to your
                 specific goals.
               </span>
@@ -199,7 +199,7 @@ export function AboutSection() {
                 {" "}
                 Our dedicated team has extensive experience in the exhibition
                 industry. We provide expert advice to help you maximize your
-                booth's potential and ensure a successful event.
+                booth&apos;s potential and ensure a successful event.
               </span>
             </motion.p>
             <motion.button
