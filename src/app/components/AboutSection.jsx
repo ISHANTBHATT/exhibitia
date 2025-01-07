@@ -144,18 +144,63 @@ export function AboutSection() {
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-neutral-900"
                 variants={itemVariants}
               >
-                Crafting Inspired Spaces for Over 15 Years
+                Why Choose Us?
               </motion.h3>
             </div>
             <motion.p
-              className="text-lg text-muted-foreground max-w-xl text-textcolor"
+              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
               variants={itemVariants}
             >
-              Established with a passion for creativity and a commitment to
-              excellence, Upstairs has been transforming spaces since 2009. With
-              a keen eye for detail and a focus on innovation, we strive to
-              exceed our clients&apos; expectations with every project we
-              undertake.
+              Innovative Designs:
+              <span className="font-normal">
+                {" "}
+                Our team of experienced designers will work closely with you to
+                develop creative, eye-catching booth designs that reflect your
+                brand’s identity and engage your audience.
+              </span>
+            </motion.p>
+            <motion.p
+              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              variants={itemVariants}
+            >
+              Custom Solutions:
+              <span className="font-normal">
+                {" "}
+                We understand that every event is different. That's why we offer
+                customized booth solutions, including modular designs,
+                interactive displays, and immersive experiences tailored to your
+                specific goals.
+              </span>
+            </motion.p>
+            <motion.div
+              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              variants={itemVariants}
+            >
+              Comprehensive Services:
+              <span className="font-normal">
+                {" "}
+                From concept to execution, we manage every aspect of your
+                exhibition booth. Our services include:
+                <ul className="list-disc pl-8">
+                  <li>Booth design and fabrication </li>
+                  <li>Setup and teardown </li>
+                  <li>AV and technology integration </li>
+                  <li>Logistics and transportation </li>
+                  <li>On-site support </li>
+                </ul>
+              </span>
+            </motion.div>
+            <motion.p
+              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              variants={itemVariants}
+            >
+              Expert Guidance:
+              <span className="font-normal">
+                {" "}
+                Our dedicated team has extensive experience in the exhibition
+                industry. We provide expert advice to help you maximize your
+                booth's potential and ensure a successful event.
+              </span>
             </motion.p>
             <motion.button
               className="bg-secondary hover:bg-neutral-700 text-white rounded-full px-8 py-2"

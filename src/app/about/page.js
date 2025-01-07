@@ -22,8 +22,159 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Testimonials4 } from "../components/Testimonials4";
 import { Team } from "../components/Team";
-
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Sparkles,
+  Shield,
+  Users,
+  Globe,
+  History,
+  Rocket,
+  PhoneCall,
+} from "lucide-react";
+import WhyChooseUs from "../components/WhyChooseUs";
 export default function AboutPage() {
+  // const data = [
+  //   {
+  //     name: "Planning",
+  //     icon: (
+  //       <Image
+  //         src="/images/Planning.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  //   {
+  //     name: "Consultation",
+  //     icon: (
+  //       <Image
+  //         src="/images/Consultation.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  //   {
+  //     name: "Woodwork",
+  //     icon: (
+  //       <Image
+  //         src="/images/Woodwork.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  //   {
+  //     name: "Installation",
+  //     icon: (
+  //       <Image
+  //         src="/images/Installation.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  //   {
+  //     name: "Furnishing",
+  //     icon: (
+  //       <Image
+  //         src="/images/Furnishing.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  //   {
+  //     name: "Partitioning",
+  //     icon: (
+  //       <Image
+  //         src="/images/Partitioning.png"
+  //         width={200}
+  //         height={200}
+  //         className="h-10 w-10 object-contain"
+  //       />
+  //     ),
+  //   },
+  // ];
+  const data = [
+    {
+      name: "Custom Booth Design",
+      icon: (
+        <Image
+          src="/images/Furnishing.png"
+          width={200}
+          height={200}
+          className="h-14 w-14 object-contain"
+        />
+      ),
+    },
+    {
+      name: "Modular and Portable Booths",
+      icon: (
+        <Image
+          src="/images/demo4.jpg"
+          width={200}
+          height={200}
+          className="h-14 w-14 object-contain"
+        />
+      ),
+    },
+    {
+      name: "Booth Fabrication",
+      icon: (
+        <Image
+          src="/images/Woodwork.png"
+          width={200}
+          height={200}
+          className="h-14 w-14 object-contain"
+        />
+      ),
+    },
+    {
+      name: "End-to-End Project Management",
+      icon: (
+        <Image
+          src="/images/Installation.png"
+          width={200}
+          height={200}
+          className="h-14 w-14 object-contain"
+        />
+      ),
+    },
+  ];
+  const features = [
+    {
+      icon: <Sparkles className="w-6 h-6 text-primary" />,
+      title: "Innovative Designs",
+      description:
+        "Our creative team stays ahead of trends to bring fresh, eye-catching ideas to life.",
+    },
+    {
+      icon: <Shield className="w-6 h-6 text-primary" />,
+      title: "Exceptional Quality",
+      description:
+        "We pride ourselves on delivering booths that combine aesthetics with durability.",
+    },
+    {
+      icon: <Users className="w-6 h-6 text-primary" />,
+      title: "Customer Focus",
+      description:
+        "Your success is our priority, and we're dedicated to providing an outstanding experience from start to finish.",
+    },
+    {
+      icon: <Globe className="w-6 h-6 text-primary" />,
+      title: "Global Reach",
+      description:
+        "Whether your event is local or international, our network and expertise ensure flawless execution.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-white py-10">
       {/* Hero Section */}
@@ -82,111 +233,41 @@ export default function AboutPage() {
           </div>
 
           {/* About Section */}
-          <div className="w-full lg:w-1/2 pl-20">
+          <div className="w-full lg:w-1/2 lg:pl-20">
             <span className="text-[#8B8165] font-semibold text-sm">
               ABOUT US
             </span>
             <h2 className="text-5xl font-bold mt-2 mb-6 leading-tight">
-              Best Way To Design Your Home, Office, Etc.
+              Welcome to Exhibitia,
             </h2>
             <p className="text-gray-600 mb-8">
-              We provide professional services at exhibition shows . Our
-              original Concepts allow you to focus on promoting your brand while
-              we deliver highly innovative exhibition stand installations within
-              timescales and budgets. Exhibitia Retail Branding & Interiors
-              designs are based on detailed market research, its preferences and
-              sensibilities. Our integrated retail branding approach balances
-              business and aesthetics needs. We at exhibitia Retail designs,
-              build and install interiors including wide range of furniture and
-              lighting solutions, we also create point of purchase, in-store
-              branding containing kiosks, menu boards and display units. We are
-              offering wide range of retail services having design and market
-              strategy, visual communication design, conceptual positioning,
-              brand/logo identity, development and implementation, material
-              procurement, furniture/fixture and construction administration. We
-              assist organizations to make their brands Breathe. Exhibitia
-              produces superb corporate events: creatively conceived,
-              strategically planned and beautifully executed. Impeccable in
-              every detail of design and ambience, we provide a Perfect Platform
-              for building your brand and the relationships most important to
-              you.
+              where creativity meets functionality in the world of exhibition
+              booth solutions. We are a team of dedicated professionals
+              passionate about helping brands make a lasting impression at trade
+              shows, conferences, and exhibitions. With a perfect blend of
+              innovation, craftsmanship, and customer-centricity, we design and
+              deliver booths that not only attract attention but also tell your
+              unique story.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Our Mission Our mission is to transform your vision into reality,
+              creating dynamic and impactful exhibition spaces that captivate
+              audiences and foster meaningful connections. We are committed to
+              delivering high-quality, customized solutions that align with your
+              brand identity and marketing goals.
             </p>
 
+            <p className="text-xl font-bold mt-2 mb-6 leading-tight">
+              What We Do At Exhibitia, we specialize in:
+            </p>
             {/* Services Grid */}
-            <div className="grid grid-cols-3 gap-6">
-              {[
-                {
-                  name: "Planning",
-                  icon: (
-                    <Image
-                      src="/images/Planning.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-                {
-                  name: "Consultation",
-                  icon: (
-                    <Image
-                      src="/images/Consultation.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-                {
-                  name: "Woodwork",
-                  icon: (
-                    <Image
-                      src="/images/Woodwork.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-                {
-                  name: "Installation",
-                  icon: (
-                    <Image
-                      src="/images/Installation.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-                {
-                  name: "Furnishing",
-                  icon: (
-                    <Image
-                      src="/images/Furnishing.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-                {
-                  name: "Partitioning",
-                  icon: (
-                    <Image
-                      src="/images/Partitioning.png"
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 object-contain"
-                    />
-                  ),
-                },
-              ].map((service) => (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {data.map((service) => (
                 <div
                   key={service.name}
                   className="flex items-center gap-3 text-gray-800"
                 >
-                  <span className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-lg">
+                  <span className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center text-lg">
                     {service.icon}
                   </span>
                   <span className="text-sm">{service.name}</span>
@@ -201,6 +282,103 @@ export default function AboutPage() {
             </button>
           </div>
         </div>
+
+        {/* <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl font-bold text-center mb-16 text-gray-900"
+            >
+              Why Choose Us?
+            </motion.h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="bg-white border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <CardContent className="p-6">
+                      <div className="rounded-full bg-primary/10 p-3 w-fit mb-4">
+                        {feature.icon}
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="space-y-4"
+              >
+                <div className="rounded-full bg-primary/10 p-3 w-fit">
+                  <History className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Our Story
+                </h3>
+                <p className="text-gray-600">
+                  Founded in 2017, Exhibitia began with a simple idea: to
+                  revolutionize the way brands showcase themselves. Over the
+                  years, we have grown into a trusted partner for businesses
+                  across diverse industries, earning a reputation for excellence
+                  and reliability.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="space-y-4"
+              >
+                <div className="rounded-full bg-primary/10 p-3 w-fit">
+                  <Rocket className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Let's Create Something Amazing
+                </h3>
+                <p className="text-gray-600">
+                  We believe every brand has a story worth sharing, and we're
+                  here to help you tell it in the most compelling way. Let's
+                  collaborate to make your next event a memorable success.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+                className="space-y-4"
+              >
+                <div className="rounded-full bg-primary/10 p-3 w-fit">
+                  <PhoneCall className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Contact Us
+                </h3>
+                <p className="text-gray-600">
+                  Ready to elevate your exhibition presence? Get in touch with
+                  us today to discuss your project and discover how we can bring
+                  your vision to life.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div> */}
+
+        <WhyChooseUs />
         <Testimonials4 />
         <Team />
       </div>

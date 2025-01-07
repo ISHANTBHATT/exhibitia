@@ -7,35 +7,31 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Saara",
-    role: "TEACHER",
-    image: "/images/person.png",
+    name: "- Bodycare Creations",
+    image: "/images/bodycare.jpg",
     quote:
-      "Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis. Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis.",
+      "The team truly understood our vision and brought it to life with an incredible booth that attracted so many leads!",
   },
   {
     id: 2,
-    name: "Laara",
-    role: "Doctor",
+    name: "- Ribbel International",
     image: "/images/person2.png",
     quote:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Etiam ridiculus convallis arcu quisque sem tempus auctor. Pulvinar diam arcu maximus dapibus quis. Leo consectetur sagittis est, magnis ornare penatibus nisi. Id ex vitae facilisis a leo. Laoreet tincidunt ad platea sociosqu dictum commodo! Arcu non odio euismod lacinia at quis.",
+      "Their attention to detail and commitment to excellence made all the difference in our event experience.",
   },
   {
     id: 3,
     name: "aara",
-    role: "Developer",
     image: "/images/person.png",
     quote:
-      "Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Blandit aliquam etiam erat velit scelerisque. Mauris ultrices eros in cursus turpis massa. Imperdiet dui accumsan sit amet. Porta lorem mollis Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Blandit aliquam etiam erat velit scelerisque.",
+      "Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Blandit aliquam etiam erat velit scelerisque. Mauris ultrices eros in cursus turpis massa. Imperdiet dui accumsan sit amet.",
   },
   {
     id: 4,
     name: "ara",
-    role: "TEACHER",
     image: "/images/person.png",
     quote:
-      "Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis. Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis.",
+      "Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis. Non diam phasellus vestibulum lorem sed. ",
   },
 ];
 
@@ -69,12 +65,15 @@ export function Testimonials4() {
         <div className="">
           <p className="text-sm tracking-wider mb-4">CLIENT REVIEWS</p>
           <h2 className="text-5xl font-normal mb-8">Feedback From Clients</h2>
+
           <blockquote className="text-xl leading-relaxed mb-8">
+            <span className="text-4xl">“</span>
             {testimonial.quote}
+            <span className="text-4xl">”</span>
           </blockquote>
           <div className="mb-8">
             <h3 className="text-2xl font-normal mb-2">{testimonial.name}</h3>
-            <p className="text-sm tracking-wider">{testimonial.role}</p>
+            {/* <p className="text-sm tracking-wider">{testimonial.role}</p> */}
           </div>
           <div className="flex gap-4">
             <button

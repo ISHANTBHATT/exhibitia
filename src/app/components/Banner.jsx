@@ -56,10 +56,10 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    subtitle: "UNIQUE DESIGN",
-    title: "Crafting Beautiful Spaces With A Personal Touch",
+    subtitle: "Welcome to Exhibitia!",
+    title: "Your Premier Exhibition Booth Partner",
     description:
-      "Gravida nulla luctus enim ut mauris neque dapibus gravida parturient. Vivamus commodo nisl elementum eu iaculis ultrices urna ultricies. Vivamus commodo nisl elementum eu iaculis ultrices urna ultricies.",
+      "At Exhibitia, we specialize in creating exceptional exhibition booth experiences that captivate audiences and elevate your brand presence. Whether you're a small startup or an established enterprise, we provide tailored solutions designed to meet your unique needs and help you stand out at events.",
   },
   {
     subtitle: "INTERIOR DESIGN",

@@ -166,15 +166,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import Masonry from "react-masonry-css";
 import UploadForm from "./UploadForm";
 
-export default function PhotoGallery() {
+export default function PhotoGallery({ api }) {
   const [photos, setPhotos] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
+    default: 2,
+    1100: 2,
     700: 2,
     500: 1,
   };
@@ -182,7 +182,9 @@ export default function PhotoGallery() {
   const fetchPhotos = async () => {
     try {
       setLoading(true);
-      const res = await fetch("/api/photos");
+      console.log("fetching photos", api);
+      // const res = await fetch("/api/photos");
+      const res = await fetch(`/api/${api}`);
       if (!res.ok) {
         throw new Error("Failed to fetch photos");
       }
@@ -199,7 +201,7 @@ export default function PhotoGallery() {
 
   useEffect(() => {
     fetchPhotos();
-  }, []);
+  }, [api]);
 
   const handleUploadComplete = () => {
     fetchPhotos();
@@ -214,7 +216,7 @@ export default function PhotoGallery() {
   }
 
   return (
-    <div className="px-4">
+    <div className="px-4 overflow-hidden">
       {/* <UploadForm onUploadComplete={handleUploadComplete} /> */}
       {photos.length === 0 ? (
         <div className="text-center py-4">
@@ -238,7 +240,7 @@ export default function PhotoGallery() {
               <Image
                 src={photo.src}
                 alt={`Photo ${photo.id + 1}`}
-                width={300}
+                width={1000}
                 height={photo.height || 200}
                 className="object-cover w-full"
               />

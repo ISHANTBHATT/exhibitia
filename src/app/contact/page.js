@@ -121,13 +121,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen  text-white py-10">
       {/* Header Section */}
-      <div className="relative h-[200px] bg-secondary">
+      {/* <div className="relative h-[200px] bg-secondary">
         <div
           className="absolute inset-0 bg-center bg-cover "
           // style={{ backgroundImage: `url(images/demo1.jpg)` }}
@@ -143,6 +144,27 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="relative flex justify-around py-20 text-white">
+        <div className="absolute top-0 left-0 w-full h-full bg-secondary -z-10 clip-diagonal"></div>
+        <div className="px-4 h-full flex flex-col justify-end pb-8">
+          <h1 className="text-6xl font-bold text-white mb-2">Contact</h1>
+          <div className="text-white/80 flex items-center gap-2 text-sm">
+            <Link href="/" className="hover:text-white">
+              HOME
+            </Link>
+            <span>/</span>
+            <span>CONTACT</span>
+          </div>
+        </div>
+        <Image
+          src="/images/contact2.png"
+          alt="carrer"
+          width={300}
+          height={100}
+          className=""
+        />
       </div>
       <header className="bg-white text-secondary py-6">
         <div className="container mx-auto px-4">

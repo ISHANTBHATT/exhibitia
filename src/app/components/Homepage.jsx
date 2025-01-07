@@ -17,16 +17,16 @@ function Homepage() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
+        "The team truly understood our vision and brought it to life with an incredible booth that attracted so many leads!",
+      name: "Bodycare Creations",
+      designation: "Marketing Manager at Bodycare Creations",
       src: "/images/1.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
+        "Their attention to detail and commitment to excellence made all the difference in our event experience.",
+      name: "Ribbel International",
+      designation: "CTO at Ribbel International",
       src: "/images/2.jpg",
     },
     {

@@ -5,22 +5,22 @@ const team = [
   {
     name: "Spas Markus",
     role: "INTERIOR DECORATOR",
-    image: "/images/person.png",
+    image: "/images/men.jpg",
   },
   {
     name: "Agnes Arlette",
     role: "PRODUCTION DESIGNER",
-    image: "/images/person2.png",
+    image: "/images/women.png",
   },
   {
     name: "Deneb Anzor",
     role: "MANAGER",
-    image: "/images/person.png",
+    image: "/images/women.png",
   },
   {
     name: "Ayanda Marte",
     role: "CEO",
-    image: "/images/person2.png",
+    image: "/images/men.jpg",
   },
 ];
 

@@ -81,27 +81,27 @@ export default function TeamSection() {
     {
       name: "Interior Decorator",
       role: "INTERIOR DECORATOR",
-      image: "/images/person.png",
+      image: "/images/women.png",
     },
     {
       name: "Production Designer",
       role: "PRODUCTION DESIGNER",
-      image: "/images/person2.png",
+      image: "/images/men.jpg",
     },
     {
       name: "Manager",
       role: "MANAGER",
-      image: "/images/person.png",
+      image: "/images/women.png",
     },
     {
       name: "Bath Designer",
       role: "BATH DESIGNER",
-      image: "/images/person2.png",
+      image: "/images/men.jpg",
     },
     {
       name: "CEO",
       role: "CEO",
-      image: "/images/person.png",
+      image: "/images/men.jpg",
     },
   ];
 

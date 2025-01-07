@@ -1,7 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building2, Calendar, HomeIcon, Megaphone } from "lucide-react";
+// import { Building2, Calendar, HomeIcon, Megaphone } from "lucide-react";
+import {
+  Building2,
+  Hammer,
+  ClipboardList,
+  Truck,
+  Tv2,
+  PenTool,
+  Store,
+  Camera,
+} from "lucide-react";
 import {
   Card,
   CardContent,
@@ -13,64 +23,256 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import { ArrowRight } from "lucide-react";
+import { Trophy, ShieldCheck, Target, PiggyBank } from "lucide-react";
+
+// const services = [
+//   {
+//     title: "CUSTOM BOOTH DESIGN",
+//     icon: Building2,
+//     description:
+//       "We work closely with you to create booth designs that reflect your brand identity and goals. From concept to final design, our expert designers deliver innovative and functional layouts tailored to your needs.",
+//     details: [
+//       "Bespoke booth concepts",
+//       "3D renderings and floor plans",
+//       "Branding and graphic design integration",
+//     ],
+//     color: "bg-black",
+//     hoverColor: "hover:bg-black/90",
+//     textColor: "text-white",
+//   },
+//   {
+//     title: "BOOTH FABRICATION AND CONSTRUCTION",
+//     icon: Calendar,
+//     description:
+//       "Our skilled team builds high-quality booths using premium materials and precise craftsmanship, ensuring durability and a flawless finish.",
+//     details: [
+//       "Custom booth construction",
+//       "Modular and portable booth systems",
+//       "Eco-friendly material options",
+//     ],
+//     color: "bg-slate-600",
+//     hoverColor: "hover:bg-slate-600/90",
+//     textColor: "text-white",
+//   },
+//   {
+//     title: "PROJECT MANAGEMENT",
+//     icon: HomeIcon,
+//     description:
+//       "From initial planning to on-site delivery, we handle all the details so you can focus on engaging with your audience.",
+//     details: [
+//       "Timeline and budget management",
+//       "Coordination with event organizers",
+//       "Logistics and transportation",
+//     ],
+//     color: "bg-white",
+//     hoverColor: "hover:bg-slate-50",
+//     textColor: "text-slate-900",
+//   },
+//   {
+//     title: "INSTALLATION AND DISMANTLING",
+//     icon: Megaphone,
+//     description:
+//       "Our team ensures a seamless setup and teardown process, allowing you to concentrate on making connections and achieving your event goals.",
+//     details: [
+//       "Professional on-site installation",
+//       "Efficient dismantling and packing",
+//       "Storage solutions for reusable booths",
+//     ],
+//     color: "bg-emerald-500",
+//     hoverColor: "hover:bg-emerald-400",
+//     textColor: "text-white",
+//   },
+//   {
+//     title: "AUDIOVISUAL AND TECHNOLOGY INTEGRATION",
+//     icon: Megaphone,
+//     description:
+//       "Enhance your booth experience with cutting-edge technology and interactive elements to engage your visitors.",
+//     details: [
+//       "LED screens and video walls",
+//       "Interactive kiosks and touchscreens",
+//       "Lighting and sound systems",
+//     ],
+//     color: "bg-black",
+//     hoverColor: "hover:bg-black/90",
+//     textColor: "text-white",
+//   },
+//   {
+//     title: "BRANDING AND GRAPHIC DESIGN",
+//     icon: Megaphone,
+//     description:
+//       "We provide striking visuals that make a lasting impression. Our graphic solutions align with your brand’s message and resonate with your audience.",
+//     details: [
+//       "High-resolution printing",
+//       "Custom signage and banners",
+//       "Backlit displays and wraps",
+//     ],
+//     color: "bg-slate-600",
+//     hoverColor: "hover:bg-slate-600/90",
+//     textColor: "text-white",
+//   },
+//   {
+//     title: "RENTAL BOOTH SOLUTIONS",
+//     icon: Megaphone,
+//     description:
+//       "For exhibitors seeking flexibility, we offer a wide selection of rental booths that are customizable to fit your event requirements.",
+//     details: [
+//       "Cost-effective options",
+//       "Pre-designed modular systems",
+//       "Full-service rental packages",
+//     ],
+//     color: "bg-white",
+//     hoverColor: "hover:bg-slate-50",
+//     textColor: "text-black",
+//   },
+//   {
+//     title: "PHOTOGRAPHY",
+//     icon: Megaphone,
+//     description:
+//       "Visual that captures the essence of brands, highlights intricate details, and creates visually impactful narratives to engage audiences.",
+//     details: [
+//       "Cost-effective options",
+//       "Pre-designed modular systems",
+//       "Full-service rental packages",
+//     ],
+//     color: "bg-emerald-500",
+//     hoverColor: "hover:bg-emerald-400",
+//     textColor: "text-white",
+//   },
+// ];
 
 const services = [
   {
-    title: "EXHIBITIONS",
+    title: "CUSTOM BOOTH DESIGN",
     icon: Building2,
-    description: "Professional Exhibition Stand Design & Fabrication",
+    description:
+      "We work closely with you to create booth designs that reflect your brand identity and goals. From concept to final design, our expert designers deliver innovative and functional layouts tailored to your needs.",
     details: [
-      "Exhibition stand designing and booth fabrication",
-      "Portable display systems",
-      "Years of stand building experience in India and worldwide markets",
+      "Bespoke booth concepts",
+      "3D renderings and floor plans",
+      "Branding and graphic design integration",
     ],
     color: "bg-black",
     hoverColor: "hover:bg-black/90",
     textColor: "text-white",
   },
   {
-    title: "EVENTS",
-    icon: Calendar,
-    description: "Superb Corporate Events Management",
+    title: "BOOTH FABRICATION AND CONSTRUCTION",
+    icon: Hammer,
+    description:
+      "Our skilled team builds high-quality booths using premium materials and precise craftsmanship, ensuring durability and a flawless finish.",
     details: [
-      "Creatively conceived and strategically planned events",
-      "Perfect platform for brand building",
-      "Client dinners, awards ceremonies, and product launches",
+      "Custom booth construction",
+      "Modular and portable booth systems",
+      "Eco-friendly material options",
     ],
     color: "bg-slate-600",
     hoverColor: "hover:bg-slate-600/90",
     textColor: "text-white",
   },
   {
-    title: "INTERIORS",
-    icon: HomeIcon,
-    description: "Corporate Interior Design & Build Services",
+    title: "PROJECT MANAGEMENT",
+    icon: ClipboardList,
+    description:
+      "From initial planning to on-site delivery, we handle all the details so you can focus on engaging with your audience.",
     details: [
-      "Comprehensive woodwork and modular furniture",
-      "Painting, polishing, and flooring solutions",
-      "Complete electrical and networking installations",
+      "Timeline and budget management",
+      "Coordination with event organizers",
+      "Logistics and transportation",
     ],
     color: "bg-white",
     hoverColor: "hover:bg-slate-50",
     textColor: "text-slate-900",
   },
   {
-    title: "ACTIVATIONS",
-    icon: Megaphone,
-    description: "Brand Activation Solutions",
+    title: "INSTALLATION AND DISMANTLING",
+    icon: Truck,
+    description:
+      "Our team ensures a seamless setup and teardown process, allowing you to concentrate on making connections and achieving your event goals.",
     details: [
-      "Mall Promotions",
-      "New Product Launches",
-      "Corporate Promotions",
-      "Road Shows",
-      "Modern Trade",
+      "Professional on-site installation",
+      "Efficient dismantling and packing",
+      "Storage solutions for reusable booths",
     ],
     color: "bg-emerald-500",
     hoverColor: "hover:bg-emerald-400",
     textColor: "text-white",
   },
+  {
+    title: "AUDIOVISUAL AND TECHNOLOGY INTEGRATION",
+    icon: Tv2,
+    description:
+      "Enhance your booth experience with cutting-edge technology and interactive elements to engage your visitors.",
+    details: [
+      "LED screens and video walls",
+      "Interactive kiosks and touchscreens",
+      "Lighting and sound systems",
+    ],
+    color: "bg-gradient-to-br from-neutral-700 to-neutral-800",
+    hoverColor: "hover:from-neutral-800 hover:to-neutral-900",
+    textColor: "text-white",
+  },
+  {
+    title: "BRANDING AND GRAPHIC DESIGN",
+    icon: PenTool,
+    description:
+      "We provide striking visuals that make a lasting impression. Our graphic solutions align with your brand's message and resonate with your audience.",
+    details: [
+      "High-resolution printing",
+      "Custom signage and banners",
+      "Backlit displays and wraps",
+    ],
+    color: "bg-gradient-to-br from-rose-500 to-pink-500",
+    hoverColor: "hover:from-rose-600 hover:to-pink-600",
+    textColor: "text-white",
+  },
+  {
+    title: "RENTAL BOOTH SOLUTIONS",
+    icon: Store,
+    description:
+      "For exhibitors seeking flexibility, we offer a wide selection of rental booths that are customizable to fit your event requirements.",
+    details: [
+      "Cost-effective options",
+      "Pre-designed modular systems",
+      "Full-service rental packages",
+    ],
+    color: "bg-gradient-to-br from-slate-100 to-slate-200",
+    hoverColor: "hover:from-slate-200 hover:to-slate-300",
+    textColor: "text-black",
+  },
+  {
+    title: "PHOTOGRAPHY",
+    icon: Camera,
+    description:
+      "Visual that captures the essence of brands, highlights intricate details, and creates visually impactful narratives to engage audiences.",
+    details: [
+      "Professional event and product photography",
+      "360° booth and exhibit documentation",
+      "Post-production and digital enhancement",
+    ],
+    color: "bg-gradient-to-br from-cyan-500 to-blue-500",
+    hoverColor: "hover:from-cyan-600 hover:to-blue-600",
+    textColor: "text-white",
+  },
 ];
 
+const features = [
+  {
+    icon: <Trophy className="w-10 h-10 text-neutral-700" />,
+    title: "Experienced team of professionals",
+  },
+  {
+    icon: <ShieldCheck className="w-10 h-10 text-neutral-700" />,
+    title: "End-to-end service for hassle-free experience",
+  },
+  {
+    icon: <Target className="w-10 h-10 text-neutral-700" />,
+    title: "Commitment to quality and innovation",
+  },
+  {
+    icon: <PiggyBank className="w-10 h-10 text-neutral-700" />,
+    title: "Competitive pricing",
+  },
+];
 export default function ServicesPage() {
   return (
     <>
@@ -110,8 +312,10 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Comprehensive solutions for exhibitions, events, interiors, and
-              brand activations
+              At Exhibitia, we specialize in creating impactful exhibition
+              booths that elevate your brand presence and captivate your
+              audience. Our comprehensive range of services ensures your booth
+              stands out at any event. Here’s how we can help:
             </p>
           </div>
 
@@ -170,6 +374,43 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto pt-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-4xl font-bold text-center mb-16 text-gray-900"
+        >
+          Why Choose Us?
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <Card className="bg-white h-full border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <div className="rounded-full bg-primary/10 p-3 w-fit mb-4">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center pb-10">
+          Let us transform your vision into an engaging exhibition experience.
+          Ready to get started? Contact us today for a free consultation and
+          quote.
+        </p>
       </div>
       <BeforeAfterSlider />
       {/* <section className="bg-secondary text-white py-20 px-4 sm:px-6 lg:px-8">

@@ -103,7 +103,7 @@ export default function BeforeAfterSlider() {
 
       <div
         ref={containerRef}
-        className="relative w-full h-[600px] overflow-hidden rounded-lg cursor-ew-resize"
+        className="relative w-full h-[400px] sm:h-[600px] overflow-hidden rounded-lg cursor-ew-resize "
         onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

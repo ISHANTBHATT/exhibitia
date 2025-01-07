@@ -265,7 +265,7 @@ export function HeroSection() {
               className="text-lg font-semibold mb-2"
               variants={itemVariants}
             >
-              OUR PROJECTS
+              OUR PORTFOLIO
             </motion.h2>
             <motion.h1
               className="text-4xl md:text-6xl font-bold mb-4"
@@ -280,10 +280,8 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <p className="text-lg max-w-2xl text-gray-50">
-              From modern minimalism to timeless elegance, our portfolio
-              showcases a spectrum of design styles and inspirations. Discover
-              how we turn visions into captivating realities, one space at a
-              time.
+              Explore our portfolio to see examples of our previous work,
+              showcasing a diverse range of designs and successful events.
             </p>
           </motion.div>
         </motion.div>
