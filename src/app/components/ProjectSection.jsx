@@ -122,9 +122,9 @@ export default function Home() {
           className="text-4xl font-bold text-center mb-12"
           variants={itemVariants}
         >
-          Transform Your Work And Living Space
+          Transform Your Exhibition Presence
           <br />
-          With Style, Comfort And Functionality
+          Custom booth designs that capture attention and drive engagement
         </motion.h2>
       </motion.section>
 
