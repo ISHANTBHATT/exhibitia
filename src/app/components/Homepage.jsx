@@ -20,7 +20,7 @@ function Homepage() {
         "The team truly understood our vision and brought it to life with an incredible booth that attracted so many leads!",
       name: "Bodycare Creations",
       designation: "Marketing Manager at Bodycare Creations",
-      src: "/images/1.jpg",
+      src: "/images/bodycare4.jpg",
     },
     {
       quote:

@@ -223,7 +223,7 @@ export default function AboutPage() {
           {/* Study Room Image */}
           <div className="w-full lg:w-1/5">
             <Image
-              src="/images/1.jpg"
+              src="/images/14.jpeg"
               alt="Study Room Design"
               width={800}
               height={500}

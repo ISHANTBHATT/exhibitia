@@ -143,10 +143,10 @@ export default function Home() {
           variants={itemVariants}
         >
           <Image
-            src="/images/demo1.jpg"
+            src="/images/bodycare5.jpg"
             alt="Modern kitchen with pendant lights"
-            width={800}
-            height={600}
+            width={2000}
+            height={900}
             className="object-cover w-full h-[500px]"
           />
           <motion.div
@@ -170,9 +170,9 @@ export default function Home() {
             transition={{ duration: 0.3 }}
           >
             <Image
-              src="/images/demo2.jpg"
+              src="/images/Rhino.jpg"
               alt="Minimalist kitchen design"
-              width={800}
+              width={1200}
               height={300}
               className="object-cover w-full h-[240px]"
             />

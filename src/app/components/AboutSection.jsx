@@ -225,7 +225,7 @@ export function AboutSection() {
             >
               <div className="relative w-full h-full overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/demo1.jpg"
+                  src="/images/bodycare2.jpg"
                   alt="Modern kitchen design"
                   fill
                   className="object-cover"
@@ -240,7 +240,7 @@ export function AboutSection() {
             >
               <div className="relative aspect-square overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/demo2.jpg"
+                  src="/images/3.jpg"
                   alt="Interior design detail"
                   fill
                   className="object-cover"
@@ -255,7 +255,7 @@ export function AboutSection() {
             >
               <div className="relative aspect-square overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/demo3.jpg"
+                  src="/images/rollr.jpg"
                   alt="Interior design detail"
                   fill
                   className="object-cover"

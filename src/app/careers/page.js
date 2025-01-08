@@ -82,9 +82,9 @@ export default function CareersPage() {
         <Image
           src="/images/career2.png"
           alt="carrer"
-          width={300}
+          width={900}
           height={100}
-          className=""
+          className="w-80"
         />
       </div>
 
@@ -109,7 +109,7 @@ export default function CareersPage() {
           <Image
             src="/images/career.jpg"
             alt="carrer"
-            width={500}
+            width={1000}
             height={500}
             className="w-full md:w-1/2"
           />

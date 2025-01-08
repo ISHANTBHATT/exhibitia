@@ -161,9 +161,9 @@ export default function ContactPage() {
         <Image
           src="/images/contact2.png"
           alt="carrer"
-          width={300}
+          width={1000}
           height={100}
-          className=""
+          className="w-80"
         />
       </div>
       <header className="bg-white text-secondary py-6">

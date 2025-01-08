@@ -232,6 +232,7 @@
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 export function HeroSection() {
   const ref = useRef(null);
@@ -296,10 +297,10 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Japanese Sushi Bar"
+              title="Bodycare"
               location="Jakarta"
               category="Interior Design"
-              image="/images/1.jpg"
+              image="/images/bodycare3.jpg"
             />
           </motion.div>
           <motion.div
@@ -307,10 +308,10 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Modern Living Room"
+              title="Saint Gobain"
               location="New York"
               category="Interior Design"
-              image="/images/2.jpg"
+              image="/images/saint.jpeg"
             />
           </motion.div>
           <motion.div
@@ -318,10 +319,10 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Minimalist Bedroom"
+              title="Dupont"
               location="London"
               category="Interior Design"
-              image="/images/3.jpg"
+              image="/images/dupont.jpg"
             />
           </motion.div>
           <motion.div
@@ -329,10 +330,10 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Cozy Kitchen"
+              title="Groversons"
               location="Paris"
               category="Interior Design"
-              image="/images/4.jpg"
+              image="/images/Groversons.jpg"
             />
           </motion.div>
           <motion.div
@@ -340,10 +341,10 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Luxurious Bathroom"
+              title="Twiga"
               location="Dubai"
               category="Interior Design"
-              image="/images/5.jpg"
+              image="/images/Twiga.jpg"
             />
           </motion.div>
           <motion.div
@@ -351,22 +352,24 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
-              title="Scandinavian Office"
+              title="Groz-Beckert"
               location="Stockholm"
               category="Interior Design"
-              image="/images/6.jpg"
+              image="/images/Groz.jpg"
             />
           </motion.div>
         </motion.div>
-        <motion.div className="mt-12 text-center" variants={itemVariants}>
-          <motion.button
-            className="bg-neutral-700 hover:bg-neutral-600 text-white rounded-3xl px-4 py-3"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            More Projects
-          </motion.button>
-        </motion.div>
+        <Link href="/gallery">
+          <motion.div className="mt-12 text-center" variants={itemVariants}>
+            <motion.button
+              className="bg-neutral-700 hover:bg-neutral-600 text-white rounded-3xl px-4 py-3"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              More Projects
+            </motion.button>
+          </motion.div>
+        </Link>
       </div>
     </section>
   );

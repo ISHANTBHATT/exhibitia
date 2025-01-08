@@ -260,13 +260,13 @@ export default function PhotoGallery({ api }) {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white p-4 rounded-lg max-w-3xl max-h-[90vh] overflow-hidden"
+              className="bg-white p-4 rounded-lg max-w-4xl max-h-[100vh] overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
                 src={photos[selectedId]?.src || ""}
                 alt={`Photo ${selectedId + 1}`}
-                width={600}
+                width={900}
                 height={(photos[selectedId]?.height || 200) * 2}
                 className="object-contain w-full h-full"
               />
