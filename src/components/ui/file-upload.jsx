@@ -218,7 +218,7 @@ const secondaryVariant = {
   },
 };
 
-export const FileUpload = ({ onUploadComplete }) => {
+export const FileUpload = ({ api }) => {
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
@@ -239,7 +239,7 @@ export const FileUpload = ({ onUploadComplete }) => {
       reader.onload = async () => {
         setUploading(true);
         const base64Data = reader.result;
-        const res = await fetch("/api/upload", {
+        const res = await fetch(`/api/${api}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -279,7 +279,7 @@ export const FileUpload = ({ onUploadComplete }) => {
   });
 
   return (
-    <div className="w-full py-20" {...getRootProps()}>
+    <div className="w-full " {...getRootProps()}>
       <motion.div
         onClick={handleClick}
         whileHover="animate"

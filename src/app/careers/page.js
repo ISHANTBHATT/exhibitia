@@ -84,7 +84,7 @@ export default function CareersPage() {
           alt="carrer"
           width={900}
           height={100}
-          className="w-80"
+          className="w-80 hidden sm:flex"
         />
       </div>
 

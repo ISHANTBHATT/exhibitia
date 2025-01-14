@@ -51,7 +51,7 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center space-x-6">
             {/* <a href="#" className="text-muted-foreground hover:text-foreground">
               <FaFacebookF className="h-5 w-5" />
             </a>

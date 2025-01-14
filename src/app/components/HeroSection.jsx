@@ -297,6 +297,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="bodycare"
               title="Bodycare"
               location="Jakarta"
               category="Interior Design"
@@ -308,6 +309,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="saint-gobain"
               title="Saint Gobain"
               location="New York"
               category="Interior Design"
@@ -319,6 +321,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="dupont"
               title="Dupont"
               location="London"
               category="Interior Design"
@@ -330,6 +333,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="groversons"
               title="Groversons"
               location="Paris"
               category="Interior Design"
@@ -341,6 +345,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="twiga"
               title="Twiga"
               location="Dubai"
               category="Interior Design"
@@ -352,6 +357,7 @@ export function HeroSection() {
             variants={itemVariants}
           >
             <ProjectCard
+              id="groz-beckert"
               title="Groz-Beckert"
               location="Stockholm"
               category="Interior Design"
@@ -375,29 +381,31 @@ export function HeroSection() {
   );
 }
 
-function ProjectCard({ title, location, category, image }) {
+function ProjectCard({ id, title, location, category, image }) {
   return (
-    <div className="relative group overflow-hidden rounded-lg h-full">
-      <Image
-        src={image}
-        alt={title}
-        width={800}
-        height={600}
-        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-      />
-      <motion.div
-        className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6"
-        initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div>
-          <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
-          <p className="text-sm text-white/80">
-            {location} • {category}
-          </p>
-        </div>
-      </motion.div>
-    </div>
+    <Link href={`/client/${id}`}>
+      <div className="relative group overflow-hidden rounded-lg h-full">
+        <Image
+          src={image}
+          alt={title}
+          width={800}
+          height={600}
+          className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+        />
+        <motion.div
+          className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6"
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div>
+            <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
+            <p className="text-sm text-white/80">
+              {location} • {category}
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </Link>
   );
 }

@@ -29,7 +29,7 @@ export default function GalleryContent({ initialPhotos }) {
         <Button
           onClick={() => setActiveGallery("photos")}
           className={`
-            px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out
+            px-4 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold transition-all duration-300 ease-in-out
             transform hover:scale-105 hover:shadow-lg
             ${
               activeGallery === "photos"
@@ -43,7 +43,7 @@ export default function GalleryContent({ initialPhotos }) {
         <Button
           onClick={() => setActiveGallery("videos")}
           className={`
-            px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out
+            px-4 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold transition-all duration-300 ease-in-out
             transform hover:scale-105 hover:shadow-lg
             ${
               activeGallery === "videos"
@@ -57,7 +57,7 @@ export default function GalleryContent({ initialPhotos }) {
         <Button
           onClick={() => setActiveGallery("projects")}
           className={`
-            px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out
+            px-4 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold transition-all duration-300 ease-in-out
             transform hover:scale-105 hover:shadow-lg
             ${
               activeGallery === "projects"

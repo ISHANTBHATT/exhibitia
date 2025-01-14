@@ -182,7 +182,7 @@ export default function PhotoGallery({ api }) {
   const fetchPhotos = async () => {
     try {
       setLoading(true);
-      console.log("fetching photos", api);
+      // console.log("fetching photos", api);
       // const res = await fetch("/api/photos");
       const res = await fetch(`/api/${api}`);
       if (!res.ok) {

@@ -123,8 +123,31 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async () => {
+    setIsLoading(true);
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userEmail: email,
+        userFirstName: firstName,
+        userLastName: lastName,
+        phone: phone,
+        message: message,
+      }),
+    });
+    setIsLoading(false);
+  };
   return (
     <div className="min-h-screen  text-white py-10">
       {/* Header Section */}
@@ -163,7 +186,7 @@ export default function ContactPage() {
           alt="carrer"
           width={1000}
           height={100}
-          className="w-80"
+          className="w-80 hidden sm:flex"
         />
       </div>
       <header className="bg-white text-secondary py-6">
@@ -216,7 +239,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <Card className="p-8  text-secondary">
-            <form className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div className="space-y-6">
                 <h2 className="text-2xl font-semibold">Personal Information</h2>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -226,6 +249,8 @@ export default function ContactPage() {
                       id="firstName"
                       placeholder="Enter your first name"
                       className="bg-white text-black"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                       required
                     />
                   </div>
@@ -235,6 +260,8 @@ export default function ContactPage() {
                       id="lastName"
                       placeholder="Enter your last name"
                       className="bg-white text-black"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                       required
                     />
                   </div>
@@ -246,6 +273,8 @@ export default function ContactPage() {
                     type="email"
                     placeholder="Enter your email"
                     className="bg-white text-black"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -256,6 +285,8 @@ export default function ContactPage() {
                     type="tel"
                     placeholder="Enter your phone number"
                     className="bg-white text-black"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     required
                   />
                 </div>
@@ -265,6 +296,8 @@ export default function ContactPage() {
                     id="message"
                     placeholder="Enter your message"
                     className="bg-white text-black min-h-[120px]"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     required
                   />
                 </div>
@@ -283,7 +316,7 @@ export default function ContactPage() {
 
       {/* Clients Section */}
       <section className="bg-white text-black py-16">
-        <div className="flex justify-between px-10">
+        <div className="flex lg:flex-row flex-col justify-between px-10">
           <div className="flex flex-col gap-10 mb-12">
             <div>
               <p className="text-[#8B8455] mb-2">OUR CLIENTS</p>
@@ -315,7 +348,7 @@ export default function ContactPage() {
                 <img
                   src={partner.img}
                   alt=""
-                  className="max-w-[160px] h-auto"
+                  className="max-w-[160px]  h-auto"
                 />
               </Card>
             ))}

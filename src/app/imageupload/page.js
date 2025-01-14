@@ -10,8 +10,15 @@ export default function FileUploadDemo() {
   };
 
   return (
-    <div className="w-full h-screen border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
-      <FileUpload />
+    <div className="py-20 w-full h-full border border-dashed bg-white  border-neutral-200  rounded-lg ">
+      <p className="font-bold text-2xl text-center font-serif pt-10">
+        Upload Actual Pictures
+      </p>
+      <FileUpload api="upload" />
+      <p className="font-bold text-2xl text-center font-serif pt-10">
+        Upload 3D Design
+      </p>
+      <FileUpload api="upload/folder" />
     </div>
   );
 }
