@@ -81,6 +81,7 @@ export default function Banner() {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
+
       <video
         autoPlay
         loop
@@ -88,10 +89,11 @@ export default function Banner() {
         playsInline
         className="absolute inset-0 object-cover w-full h-full"
       >
-        <source src="/images/videoplayback.mp4" type="video/mp4" />
+        <source src="/images/Exhibition.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Social Links */}
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="absolute left-2 lg:left-6 top-2/3 -translate-y-1/2 hidden md:flex md:flex-col gap-6 text-white z-10 ">
         <div className="flex flex-col gap-4 ">
           <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary hover:text-black">
@@ -113,7 +115,7 @@ export default function Banner() {
       </div>
 
       {/* Main Content */}
-      <div className="relative h-full flex items-center justify-center text-center text-white px-4">
+      <div className="relative h-full flex items-center justify-center text-center text-gray-100 px-4">
         <motion.div
           key={currentSlide}
           initial={{ opacity: 0, y: 20 }}

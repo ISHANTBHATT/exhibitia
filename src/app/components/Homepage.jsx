@@ -8,7 +8,7 @@ import { AboutSection } from "./AboutSection";
 import Faq from "./Faq";
 import Feedback from "./Feedback";
 import Footer2 from "./Footer2";
-import ProjectsSection from "./ProjectSection";
+import ProjectSection from "./ProjectSection";
 import TeamSection from "./TeamSection";
 import Navbar from "./Navbar";
 import { Footer } from "./Footer";
@@ -20,7 +20,7 @@ function Homepage() {
         "The team truly understood our vision and brought it to life with an incredible booth that attracted so many leads!",
       name: "Bodycare Creations",
       designation: "Marketing Manager at Bodycare Creations",
-      src: "/images/bodycare4.jpg",
+      src: "/images/bodycare.jpg",
     },
     {
       quote:
@@ -28,27 +28,6 @@ function Homepage() {
       name: "Ribbel International",
       designation: "CTO at Ribbel International",
       src: "/images/2.jpg",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "/images/3.jpg",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "/images/4.jpg",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "/images/5.jpg",
     },
   ];
   return (
@@ -59,9 +38,9 @@ function Homepage() {
       <AboutSection />
       <HeroSection />
       {/* <StyleSection /> */}
-      <ProjectsSection />
+      <ProjectSection />
       <Testimonials testimonials={testimonials} />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <Faq />
       {/* <Feedback /> */}
       {/* <Footer /> */}

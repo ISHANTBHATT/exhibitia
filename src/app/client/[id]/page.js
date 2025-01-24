@@ -127,20 +127,27 @@ const clients = {
     title: "Bodycare",
     location: "Jakarta",
     category: "Interior Design",
-    BannerImage: "/images/bodycare5.jpg",
+    BannerImage: "/images/bodycare12.jpg",
     images: [
-      "/images/bodycare2.jpg",
-      "/images/bodycare3.jpg",
-      "/images/bodycare4.jpg",
-      "/images/bodycare6.jpg",
+      "/images/bodycare12.jpg",
+      "/images/bodycare13.jpg",
+      "/images/bodycare14.jpg",
+      "/images/bodycare15.jpg",
+      "/images/bodycare16.jpg",
+      "/images/bodycare17.jpg",
+      "/images/bodycare18.jpg",
+      "/images/bodycare19.jpg",
+      "/images/bodycare20.jpg",
+      "/images/bodycare21.jpg",
+      "/images/bodycare22.jpg",
     ],
     description:
       "Bodycare is a leading personal care brand in Jakarta. We designed their flagship store to reflect their commitment to natural beauty and wellness. Our team worked closely with Bodycare to create a space that not only showcases their products but also provides an immersive experience for customers. The design incorporates natural materials, soothing colors, and ample natural light to create a calming atmosphere that aligns with Bodycare's ethos.",
     otherImages: [
-      "/images/bodycare8.jpg",
-      "/images/bodycare7.jpg",
-      "/images/bodycare9.jpg",
-      "/images/bodycare10.jpg",
+      "/images/bodycare2.jpg",
+      "/images/bodycare3.jpg",
+      "/images/bodycare4.jpg",
+      "/images/bodycare6.jpg",
     ],
   },
   "saint-gobain": {
@@ -209,14 +216,27 @@ const clients = {
     description:
       "Twiga's Dubai restaurant combines contemporary design with African-inspired elements, creating a unique dining experience. Our design team drew inspiration from the diverse landscapes and rich cultural heritage of Africa, incorporating warm earth tones, natural textures, and striking geometric patterns. The space features custom-made furniture, vibrant artwork, and ambient lighting that together create an immersive atmosphere. The layout balances intimate dining areas with more social spaces, catering to various dining preferences while maintaining a cohesive aesthetic throughout.",
   },
-  "groz-beckert": {
-    title: "Groz-Beckert",
+  interarch: {
+    title: "Interarch",
     location: "Stockholm",
     category: "Interior Design",
-    BannerImage: "/images/Groz.jpg",
-    images: ["/images/Groz.jpg", "/images/Groz1.jpg", "/images/Groz2.jpg"],
+    BannerImage: "/images/interarch6.jpg",
+    images: [
+      "/images/interarch5.jpg",
+      "/images/interarch6.jpg",
+      "/images/interarch7.jpg",
+      "/images/interarch8.jpg",
+      "/images/interarch9.jpg",
+      "/images/interarch10.jpg",
+    ],
     description:
       "For Groz-Beckert's Stockholm office, we designed a space that reflects their precision engineering, with clean lines and a focus on functionality. The interior embodies Groz-Beckert's commitment to innovation and efficiency in the textile industry. We created a minimalist yet warm environment, using a palette of cool grays accented with the company's signature blue. The office layout promotes collaboration and knowledge sharing, with open work areas, dedicated project rooms, and a state-of-the-art showroom for demonstrating Groz-Beckert's cutting-edge textile machinery and components.",
+    otherImages: [
+      "/images/interarch1.jpeg",
+      "/images/interarch2.jpeg",
+      "/images/interarch3.jpeg",
+      "/images/interarch4.jpeg",
+    ],
   },
 };
 
@@ -348,7 +368,7 @@ export default function ClientPage({ params }) {
                   className="transition-opacity duration-300"
                 />
               </div>
-              <div className="grid grid-cols-5 gap-2">
+              {/* <div className="grid grid-cols-5 gap-2">
                 {client.images.map((image, index) => (
                   <motion.div
                     key={index}
@@ -369,6 +389,34 @@ export default function ClientPage({ params }) {
                     />
                   </motion.div>
                 ))}
+              </div> */}
+
+              <div className="overflow-x-auto pb-4">
+                <div
+                  className="flex space-x-4"
+                  style={{ width: `${client.images.length * 120}px` }}
+                >
+                  {client.images.map((image, index) => (
+                    <motion.div
+                      key={index}
+                      className={`relative flex-shrink-0 w-28 h-20 rounded-lg overflow-hidden cursor-pointer ${
+                        selectedImage === index ? "ring-2 ring-blue-500" : ""
+                      }`}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.3, delay: 0.1 * index }}
+                      onClick={() => setSelectedImage(index)}
+                    >
+                      <Image
+                        src={image || "/placeholder.svg"}
+                        alt={`${client.title} - Thumbnail ${index + 1}`}
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-transform duration-300 hover:scale-110"
+                      />
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

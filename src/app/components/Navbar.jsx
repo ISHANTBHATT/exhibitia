@@ -34,20 +34,22 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="flex items-center gap-2 border-r-[0.1px] border-gray-300">
-              {/* <Image
+            <Link href="/">
+              <div className="flex items-center gap-2 border-r-[0.1px] border-gray-300">
+                {/* <Image
                 src="/images/logo.png"
                 alt="logo"
                 width={150}
                 height={150}
                 className=""
               /> */}
-              {isScrolled || !isHomePage ? (
-                <img src="/images/logo2.png" alt="logo" className="w-40" />
-              ) : (
-                <img src="/images/logo.png" alt="logo" className="w-40" />
-              )}
-            </div>
+                {isScrolled || !isHomePage ? (
+                  <img src="/images/logo2.png" alt="logo" className="w-40" />
+                ) : (
+                  <img src="/images/logo2.png" alt="logo" className="w-40" />
+                )}
+              </div>
+            </Link>
 
             {/* Navigation Links */}
             <div className="hidden lg:flex w-full space-x-20 px-10">

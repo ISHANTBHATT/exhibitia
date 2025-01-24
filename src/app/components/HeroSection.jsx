@@ -293,7 +293,7 @@ export function HeroSection() {
           animate={isInView ? "visible" : "hidden"}
         >
           <motion.div
-            className="col-span-12 md:col-span-4"
+            className="col-span-12 md:col-span-7 "
             variants={itemVariants}
           >
             <ProjectCard
@@ -301,11 +301,11 @@ export function HeroSection() {
               title="Bodycare"
               location="Jakarta"
               category="Interior Design"
-              image="/images/bodycare3.jpg"
+              image="/images/bodycare12.jpg"
             />
           </motion.div>
           <motion.div
-            className="col-span-12 md:col-span-4 md:row-span-2"
+            className="col-span-12 md:col-span-5 md:row-span-1"
             variants={itemVariants}
           >
             <ProjectCard
@@ -313,11 +313,11 @@ export function HeroSection() {
               title="Saint Gobain"
               location="New York"
               category="Interior Design"
-              image="/images/saint.jpeg"
+              image="/images/saint2.jpg"
             />
           </motion.div>
           <motion.div
-            className="col-span-12 md:col-span-4"
+            className="col-span-12 md:col-span-6"
             variants={itemVariants}
           >
             <ProjectCard
@@ -325,11 +325,11 @@ export function HeroSection() {
               title="Dupont"
               location="London"
               category="Interior Design"
-              image="/images/dupont.jpg"
+              image="/images/dupont6.jpg"
             />
           </motion.div>
           <motion.div
-            className="col-span-12 md:col-span-4 md:row-span-2"
+            className="col-span-12 md:col-span-6 md:row-span-1"
             variants={itemVariants}
           >
             <ProjectCard
@@ -337,11 +337,11 @@ export function HeroSection() {
               title="Groversons"
               location="Paris"
               category="Interior Design"
-              image="/images/Groversons.jpg"
+              image="/images/groversons1.jpg"
             />
           </motion.div>
           <motion.div
-            className="col-span-12 md:col-span-4 md:row-span-2"
+            className="col-span-12 md:col-span-7 md:row-span-1"
             variants={itemVariants}
           >
             <ProjectCard
@@ -349,19 +349,19 @@ export function HeroSection() {
               title="Twiga"
               location="Dubai"
               category="Interior Design"
-              image="/images/Twiga.jpg"
+              image="/images/twiga1.jpg"
             />
           </motion.div>
           <motion.div
-            className="col-span-12 md:col-span-4"
+            className="col-span-12 md:col-span-5"
             variants={itemVariants}
           >
             <ProjectCard
-              id="groz-beckert"
-              title="Groz-Beckert"
+              id="interarch"
+              title="Interarch"
               location="Stockholm"
               category="Interior Design"
-              image="/images/Groz.jpg"
+              image="/images/interarch6.jpg"
             />
           </motion.div>
         </motion.div>

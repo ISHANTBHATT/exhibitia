@@ -10,34 +10,38 @@ import { FiMessageCircle } from "react-icons/fi";
 export default function Faq() {
   const faqs = [
     {
-      question: "How do I start the interior design process?",
-      answer:
-        "The interior design process begins with an initial consultation where we discuss your vision, requirements, and budget.",
+      id: 1,
+      question: "What are the different types of exhibition booths?",
+      answer: `Inline Booth: Aligned with other booths in a single row.
+Corner Booth: Positioned at the end of a row, open on two sides.
+Island Booth: Open on all four sides.
+Peninsula Booth: Open on three sides, typically located at the end of an aisle.`,
     },
     {
-      question: "What are some popular interior design styles?",
-      answer:
-        "Popular styles include Modern, Contemporary, Traditional, Industrial, Scandinavian, and Minimalist.",
+      id: 2,
+      question: "How can I design an eye-catching booth?",
+      answer: `Use bold colors and high-quality graphics.
+Ensure clear and concise messaging.
+Incorporate interactive elements like demos or games.
+Utilize good lighting to highlight products.`,
     },
     {
-      question: "How do I choose a color scheme for my home?",
+      id: 3,
+      question: "How much space do I need for my booth?",
       answer:
-        "We help you select colors based on your preferences, existing elements, lighting, and the mood you want to create.",
+        "This depends on your goals, products, and expected visitor engagement. Standard sizes include 10x10 ft, 10x20 ft, and 20x20 ft.",
     },
     {
-      question: "How do I choose the right interior designer?",
+      id: 4,
+      question: "How much does it cost to set up an exhibition booth?",
       answer:
-        "Look for designers with experience in your preferred style, check their portfolio, read reviews, and ensure clear communication.",
+        "Costs vary widely depending on booth size, design complexity, location, and event fees. Basic booths can start at a few hundred dollars, while custom setups can cost tens of thousands.",
     },
     {
-      question: "How do I maintain my interior design?",
+      id: 5,
+      question: "Are there additional costs besides the booth rental?",
       answer:
-        "Regular cleaning, proper maintenance of materials, and periodic updates help maintain your interior design.",
-    },
-    {
-      question: "How much does interior design cost?",
-      answer:
-        "Costs vary based on project scope, materials, and services required. We provide detailed estimates during consultation.",
+        "Yes, additional costs may include furniture rental, electricity, Wi-Fi, promotional materials, transportation, staffing, and exhibitor insurance.",
     },
   ];
 
@@ -54,7 +58,9 @@ export default function Faq() {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
+                <AccordionContent className="whitespace-pre-wrap">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
