@@ -339,7 +339,7 @@ export const Testimonials = ({ testimonials, autoplay = false }) => {
             <p className="text-sm text-gray-500 ">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8">
+            <motion.p className="text-lg text-gray-500 mt-2">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
