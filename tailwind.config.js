@@ -69,57 +69,76 @@ module.exports = {
           5: "hsl(var(--chart-5))",
         },
       },
-      animation: {
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        "marquee-left": "marquee-left 40s linear infinite",
-        "marquee-right": "marquee-right 40s linear infinite",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      keyframes: {
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
-        },
-        "marquee-left": {
-          "0%": {
-            transform: "translateX(0%)",
-          },
-          "100%": {
-            transform: "translateX(-100%)",
-          },
-        },
-        "marquee-right": {
-          "0%": {
-            transform: "translateX(-100%)",
-          },
-          "100%": {
-            transform: "translateX(0%)",
-          },
-        },
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-      },
+      // animation: {
+      //   scroll:
+      //     "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      //   "marquee-left": "marquee-left 40s linear infinite",
+      //   "marquee-right": "marquee-right 40s linear infinite",
+      //   "accordion-down": "accordion-down 0.2s ease-out",
+      //   "accordion-up": "accordion-up 0.2s ease-out",
+      // },
+      // keyframes: {
+      //   scroll: {
+      //     to: {
+      //       transform: "translate(calc(-50% - 0.5rem))",
+      //     },
+      //   },
+      //   "marquee-left": {
+      //     "0%": {
+      //       transform: "translateX(0%)",
+      //     },
+      //     "100%": {
+      //       transform: "translateX(-100%)",
+      //     },
+      //   },
+      //   "marquee-right": {
+      //     "0%": {
+      //       transform: "translateX(-100%)",
+      //     },
+      //     "100%": {
+      //       transform: "translateX(0%)",
+      //     },
+      //   },
+      //   "accordion-down": {
+      //     from: {
+      //       height: "0",
+      //     },
+      //     to: {
+      //       height: "var(--radix-accordion-content-height)",
+      //     },
+      //   },
+      //   "accordion-up": {
+      //     from: {
+      //       height: "var(--radix-accordion-content-height)",
+      //     },
+      //     to: {
+      //       height: "0",
+      //     },
+      //   },
+      // },
+      // borderRadius: {
+      //   lg: "var(--radius)",
+      //   md: "calc(var(--radius) - 2px)",
+      //   sm: "calc(var(--radius) - 4px)",
+      // },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      animation: {
+        "marquee-left": "marquee-left 120s linear infinite",
+        "marquee-right": "marquee-right 120s linear infinite",
+      },
+      keyframes: {
+        "marquee-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-right": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
     },
   },
