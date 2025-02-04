@@ -51,8 +51,9 @@ import { useState } from "react";
 // import { Instagram, Facebook, Youtube, Mail } from "lucide-react";
 import { IoLogoInstagram, IoIosMail } from "react-icons/io";
 import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
-import { FaYoutube, FaFacebookF } from "react-icons/fa";
+import { FaYoutube, FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const slides = [
   {
@@ -96,18 +97,26 @@ export default function Banner() {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="absolute left-2 lg:left-6 top-2/3 -translate-y-1/2 hidden md:flex md:flex-col gap-6 text-white z-10 ">
         <div className="flex flex-col gap-4 ">
-          <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary hover:text-black">
-            <FaFacebookF className="w-6 h-6 cursor-pointer" />
-          </div>
-          <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary hover:text-black">
-            <IoLogoInstagram className="w-6 h-6 cursor-pointer" />
-          </div>
-          <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary hover:text-black">
-            <FaYoutube className="w-6 h-6 cursor-pointer" />
-          </div>
-          <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary hover:text-black">
-            <IoIosMail className="w-6 h-6 cursor-pointer" />
-          </div>
+          <Link href="https://www.facebook.com/share/19kCCNb8JC/">
+            <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
+              <FaFacebookF className="w-6 h-6 cursor-pointer" />
+            </div>
+          </Link>
+          <Link href="https://www.instagram.com/exhibitia01/">
+            <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
+              <IoLogoInstagram className="w-6 h-6 cursor-pointer" />
+            </div>
+          </Link>
+          <Link href="">
+            <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
+              <FaYoutube className="w-6 h-6 cursor-pointer" />
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/sunitkataria/">
+            <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
+              <FaLinkedin className="w-6 h-6 cursor-pointer" />
+            </div>
+          </Link>
         </div>
         <span className="writing-mode-vertical text-xl font-bold tracking-widest rotate-180 flex items-center">
           FOLLOW US ON :

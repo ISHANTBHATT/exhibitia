@@ -574,7 +574,7 @@
 
 import { ClientLogo } from "./Client-logo";
 
-const clients = Array.from({ length: 14 }, (_, i) => ({
+const clients = Array.from({ length: 18 }, (_, i) => ({
   src: `/images/client${i + 1}.png`,
   alt: `Client ${i + 1} logo`,
 }));

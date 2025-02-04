@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 // import { MessageCircle } from "lucide-react";
 import { FiMessageCircle } from "react-icons/fi";
 export default function Faq() {
@@ -76,12 +77,14 @@ Utilize good lighting to highlight products.`,
             <h3 className="text-xl font-bold mb-2">Still Have Questions?</h3>
             <p className="text-muted-foreground mb-4">
               Can&apos;t find the answer you&apos;re looking for? Write to us at
-              help@gmail.com or contact us through (+11) 111-222-3333.
+              info@exhibitia.in or contact us through (+91) 9999797730.
             </p>
-            <Button variant="outline" className="gap-2">
-              <FiMessageCircle className="w-4 h-4" />
-              Contact Support
-            </Button>
+            <Link href={"contact"}>
+              <Button variant="outline" className="gap-2">
+                <FiMessageCircle className="w-4 h-4" />
+                Contact Support
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

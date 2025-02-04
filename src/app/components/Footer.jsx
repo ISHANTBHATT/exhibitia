@@ -2,7 +2,7 @@
 // import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 import { IoLogoInstagram, IoIosMail } from "react-icons/io";
 import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
-import { FaYoutube, FaFacebookF } from "react-icons/fa";
+import { FaYoutube, FaFacebookF, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 export function Footer() {
@@ -27,27 +27,38 @@ export function Footer() {
             <div className="flex space-x-6 mt-6">
               <a
                 href="#"
+                target="_blank"
                 className="text-white  bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <FaFacebookF className="h-5 w-5" />
               </a>
               <a
                 href="https://www.instagram.com/exhibitia01/"
+                target="_blank"
                 className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <IoLogoInstagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
+                target="_blank"
                 className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <FaYoutube className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="mailto:sunitkataria68@gmail.com"
+                target="_blank"
                 className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <IoIosMail className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sunitkataria/"
+                target="_blank"
+                className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
+              >
+                <FaLinkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
