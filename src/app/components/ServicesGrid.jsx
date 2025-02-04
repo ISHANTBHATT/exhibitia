@@ -191,14 +191,12 @@ function ServicesGrid() {
 
               return (
                 <motion.div
+                  key={index}
                   initial={{ opacity: 0, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <Card
-                    key={index}
-                    className="group overflow-hidden transition-all hover:shadow-lg w-full"
-                  >
+                  <Card className="group overflow-hidden transition-all hover:shadow-lg w-full">
                     <CardContent className="p-6">
                       <div
                         className={`flex flex-col ${
@@ -207,8 +205,8 @@ function ServicesGrid() {
                       >
                         <div className="w-full md:w-1/2 space-y-4">
                           <div className="flex items-center gap-4">
-                            <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                              <Icon className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-lg bg-neutral-700 flex items-center justify-center flex-shrink-0">
+                              <Icon className="h-6 w-6 text-white" />
                             </div>
                             <h3 className="text-xl font-semibold">
                               {service.title}
