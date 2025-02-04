@@ -24,6 +24,7 @@ import Link from "next/link";
 import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import { ArrowRight } from "lucide-react";
 import { Trophy, ShieldCheck, Target, PiggyBank } from "lucide-react";
+import ServicesGrid from "../components/ServicesGrid";
 
 // const services = [
 //   {
@@ -319,7 +320,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -372,7 +373,8 @@ export default function ServicesPage() {
                 </Card>
               </motion.div>
             ))}
-          </div>
+          </div> */}
+          <ServicesGrid />
         </div>
       </div>
 

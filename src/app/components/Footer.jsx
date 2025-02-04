@@ -32,7 +32,7 @@ export function Footer() {
                 <FaFacebookF className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/exhibitia01/"
                 className="text-white bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >
                 <IoLogoInstagram className="h-5 w-5" />

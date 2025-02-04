@@ -15,28 +15,48 @@ import {
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <Sparkles className="w-6 h-6 text-neutral-700" />,
+      number: "1",
+      // icon: <Sparkles className="w-6 h-6 text-neutral-700" />,
+      icon: Sparkles,
       title: "Innovative Designs",
+      color: "bg-[#F15A3C]",
+      textColor: "text-[#F15A3C]",
       description:
         "Our creative team stays ahead of trends to bring fresh, eye-catching ideas to life.",
+      position: "bottom",
     },
     {
+      number: "2",
       icon: <Shield className="w-6 h-6 text-neutral-700" />,
+      icon: Shield,
       title: "Exceptional Quality",
+      color: "bg-[#0B9AF1]",
+      textColor: "text-[#0B9AF1]",
       description:
         "We pride ourselves on delivering booths that combine aesthetics with durability.",
+      position: "top",
     },
     {
-      icon: <Users className="w-6 h-6 text-neutral-700" />,
+      number: "3",
+      // icon: <Users className="w-6 h-6 text-neutral-700" />,
+      icon: Users,
       title: "Customer Focus",
+      color: "bg-[#00D671]",
+      textColor: "text-[#00D671]",
       description:
         "Your success is our priority, and we're dedicated to providing an outstanding experience from start to finish.",
+      position: "bottom",
     },
     {
-      icon: <Globe className="w-6 h-6 text-neutral-700" />,
+      number: "4",
+      // icon: <Globe className="w-6 h-6 text-neutral-700" />,
+      icon: Globe,
       title: "Global Reach",
+      color: "bg-[#8C52FF]",
+      textColor: "text-[#8C52FF]",
       description:
         "Whether your event is local or international, our network and expertise ensure flawless execution.",
+      position: "top",
     },
   ];
 
@@ -51,7 +71,7 @@ export default function WhyChooseUs() {
           Why Choose Us?
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -72,9 +92,112 @@ export default function WhyChooseUs() {
               </Card>
             </motion.div>
           ))}
+        </div> */}
+        {/* <div className="w-full max-w-7xl mx-auto px-4 py-16">
+          <div className="relative">
+      
+            <div className="absolute top-[108px] left-0 right-0 h-[2px] border-t-2 border-dashed border-gray-300" />
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+              {features.map((step, index) => (
+                <motion.div
+                  key={step.number}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2 }}
+                  className={`flex flex-col items-center ${
+                    step.position === "top"
+                      ? "md:flex-col-reverse"
+                      : "md:flex-col"
+                  }`}
+                >
+            
+                  <div
+                    className={`flex flex-col items-center ${
+                      step.position === "top" ? "md:mb-4" : "md:mt-16"
+                    }`}
+                  >
+                    
+                    <div className="flex items-center gap-2 mb-3">
+                      <div
+                        className={`${step.color} text-white font-bold rounded-lg w-8 h-8 flex items-center justify-center`}
+                      >
+                        {step.number}
+                      </div>
+                      <h3 className={`${step.textColor} font-semibold`}>
+                        {step.title}
+                      </h3>
+                    </div>
+
+                   
+                    <p className="text-gray-600 text-sm text-center">
+                      {step.description}
+                    </p>
+                  </div>
+
+                  
+                  <div
+                    className={`${step.color} w-16 h-16 rounded-lg flex items-center justify-center relative z-10 bg-white border-4 ${step.color}`}
+                  >
+                    <step.icon className="w-8 h-8 text-white" />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>  */}
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <div className="relative">
+            <div className="absolute top-1/2 left-0 right-0 h-[2px] border-t-2 border-dashed border-gray-300" />
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-y-16 md:gap-y-0 gap-x-8 md:h-[60vh]">
+              {features.map((step, index) => (
+                <motion.div
+                  key={step.number}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2 }}
+                  className={`flex flex-col items-center ${
+                    index % 2 !== 0 ? "md:flex-col-reverse" : ""
+                  }`}
+                >
+                  <div className="relative md:absolute md:top-1/2 md:-translate-y-1/2">
+                    <div
+                      className={`bg-neutral-800 w-16 h-16 rounded-lg flex items-center justify-center`}
+                    >
+                      <step.icon className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+                  <div
+                    className={` ${
+                      index % 2 !== 0
+                        ? "md:mb-10 lg:mb-16"
+                        : "md:mt-10 lg:mt-16"
+                    }`}
+                  >
+                    <div className="flex flex-col items-center text-center">
+                      <div className="flex items-center gap-2 mb-3">
+                        <div
+                          className={`bg-neutral-800 text-white font-bold rounded-lg w-8 h-8 flex items-center justify-center`}
+                        >
+                          {step.number}
+                        </div>
+                        <h3 className={`text-neutral-800 font-semibold`}>
+                          {step.title}
+                        </h3>
+                      </div>
+                      <p className="text-gray-600 text-sm">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}

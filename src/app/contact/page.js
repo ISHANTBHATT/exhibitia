@@ -191,13 +191,17 @@ export default function ContactPage() {
       </div>
       <header className="bg-white text-secondary py-6">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">
-            Exhibitia Designs
-          </h1>
+          <div className="flex justify-center items-center mb-8 gap-4">
+            <img src="/images/logo.png" alt="logo" className="w-52" />
+            {/* <h1 className="text-4xl font-bold text-center ">
+              Exhibitia Designs
+            </h1> */}
+          </div>
+
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
-              <span>42 Harbour View Road, NSW 2000 Australia</span>
+              <span>Pitampura, Delhi-110034</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
@@ -324,9 +328,11 @@ export default function ContactPage() {
                 Trusted By Biggest Business
               </h2>
             </div>
-            <Button className="w-40 bg-secondary hover:bg-neutral-700 text-white">
-              Be Our Next Client
-            </Button>
+            <Link href="/clients">
+              <Button className="w-40 bg-secondary hover:bg-neutral-700 text-white">
+                Be Our Next Client
+              </Button>
+            </Link>
           </div>
 
           {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -361,11 +367,11 @@ export default function ContactPage() {
 
 const clients = [
   { id: 1, img: "/images/client1.png" },
-  { id: 2, img: "/images/client2.png" },
-  { id: 3, img: "/images/client3.png" },
-  { id: 4, img: "/images/client4.png" },
-  { id: 5, img: "/images/client5.png" },
-  { id: 6, img: "/images/client6.jpg" },
-  { id: 7, img: "/images/client1.png" },
-  { id: 8, img: "/images/client2.png" },
+  { id: 2, img: "/images/client17.webp" },
+  { id: 3, img: "/images/client7.png" },
+  { id: 4, img: "/images/client18.png" },
+  { id: 5, img: "/images/client3.png" },
+  { id: 6, img: "/images/client10.png" },
+  { id: 7, img: "/images/client14.png" },
+  { id: 8, img: "/images/client15.png" },
 ];

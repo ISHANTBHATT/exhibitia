@@ -34,6 +34,7 @@ import {
   PhoneCall,
 } from "lucide-react";
 import WhyChooseUs from "../components/WhyChooseUs";
+import Steps from "../components/Steps";
 export default function AboutPage() {
   // const data = [
   //   {
@@ -377,10 +378,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div> */}
+        {/* <Steps /> */}
 
         <WhyChooseUs />
         <Testimonials4 />
-        <Team />
+        {/* <Team /> */}
       </div>
     </div>
   );
