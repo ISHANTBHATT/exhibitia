@@ -78,6 +78,7 @@
 
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 function Parallax() {
   return (
@@ -103,14 +104,16 @@ function Parallax() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight transform transition duration-1000 hover:scale-105">
             Let&apos;s Start Work Today?
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-12 transition-opacity duration-500 hover:opacity-90">
+          {/* <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-12 transition-opacity duration-500 hover:opacity-90">
             We turn you on to pro lighting strategies to highlight features
             create intrigue and make the most of indoor and outdoor rooms
-          </p>
-          <button className="group bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl">
-            Build Your Dream
-            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
+          </p> */}
+          <Link href="contact">
+            <button className="group bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl">
+              Build Your Booth
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+          </Link>
         </div>
 
         {/* Animated Scroll Indicator */}

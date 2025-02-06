@@ -62,18 +62,18 @@ const slides = [
     description:
       "At Exhibitia, we specialize in creating exceptional exhibition booth experiences that captivate audiences and elevate your brand presence. Whether you're a small startup or an established enterprise, we provide tailored solutions designed to meet your unique needs and help you stand out at events.",
   },
-  {
-    subtitle: "INTERIOR DESIGN",
-    title: "Transform Your Space Into Something Extraordinary",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    subtitle: "CUSTOM SOLUTIONS",
-    title: "Bringing Your Vision To Life With Excellence",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-  },
+  // {
+  //   subtitle: "INTERIOR DESIGN",
+  //   title: "Transform Your Space Into Something Extraordinary",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+  // },
+  // {
+  //   subtitle: "CUSTOM SOLUTIONS",
+  //   title: "Bringing Your Vision To Life With Excellence",
+  //   description:
+  //     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+  // },
 ];
 
 export default function Banner() {

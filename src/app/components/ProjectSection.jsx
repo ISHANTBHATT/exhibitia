@@ -104,7 +104,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen" ref={ref}>
+    <main className="h-full" ref={ref}>
       {/* Header Section */}
       <motion.section
         className="container mx-auto px-4 py-12 text-center"

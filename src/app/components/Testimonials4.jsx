@@ -37,7 +37,7 @@ export function Testimonials4() {
   const testimonial = testimonials[currentTestimonial];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 py-20">
+    <section className="grid grid-cols-1 lg:grid-cols-2 pt-20">
       <div className="relative w-full h-[600px] lg:h-full">
         <Image
           src={testimonial.image}

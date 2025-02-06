@@ -408,30 +408,28 @@ const services = [
     description:
       "We create custom booth designs that make your brand stand out at exhibitions, trade shows, and corporate events. From concept to execution, we craft visually stunning, functional, and interactive booths that attract and engage your audience. Our designs incorporate branding, technology, and smart layouts to maximize impact. Let’s build a booth that leaves a lasting impression!",
     icon: PenTool,
-    image: "/images/Furnishing.png",
+    image: "/images/bodycare7.jpg",
   },
   {
     title: "Modular and Portable Booths",
     description:
       "We design modular and portable booths that offer flexibility, convenience, and a premium look for trade shows, exhibitions, and events. With smart layouts and customizable designs, we ensure your brand stands out effortlessly. Elevate your event presence with our sleek and innovative booth solutions!",
     icon: Layers,
-    image: "/images/demo4.jpg",
+    image: "/images/twiga1.jpg",
   },
   {
     title: "Booth Fabrication",
     description:
       "Our booth fabrication services ensure high-quality, durable, and visually striking structures for exhibitions, trade shows, and events. Using premium materials and precise craftsmanship, we create booths that reflect your brand’s identity and enhance engagement. From custom builds to modular setups, we deliver seamless and impactful booth solutions.",
     icon: Factory,
-    image:
-      "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=800",
+    image: "/images/7.jpg",
   },
   {
     title: "End-to-End Project Management",
     description:
       "Our end-to-end project management services ensure a seamless execution of your exhibition or event booth, from concept to completion. We handle everything—design, fabrication, logistics, installation, and dismantling—so you can focus on your brand. With expert coordination and attention to detail, we deliver stress-free and on-time project execution.",
     icon: ClipboardList,
-    image:
-      "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=800",
+    image: "/images/interarch6.jpg",
   },
 ];
 const features = [
@@ -559,10 +557,10 @@ export default function AboutPage() {
       </div>
 
       {/* Main Content - Single Row */}
-      <div className="container mx-auto py-12">
+      <div className=" mx-auto py-12">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1 }}
           className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden"
         >
@@ -574,12 +572,12 @@ export default function AboutPage() {
             className=""
           />
         </motion.div>
-        <div className="flex flex-col flex-wrap lg:flex-nowrap gap-8 ">
+        <div className="flex flex-col flex-wrap lg:flex-nowrap gap-8 py-12">
           <div className="w-full pt-10 px-4 md:px-10">
             <motion.h2
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-5xl font-bold mt-2 mb-6 leading-tight text-center"
+              className="text-5xl font-bold mt-2 mb-6 leading-tight"
             >
               Welcome to Exhibitia
             </motion.h2>
@@ -608,7 +606,7 @@ export default function AboutPage() {
               brand identity and marketing goals.
             </motion.p>
 
-            <p className="text-2xl font-bold mt-2 mb-6 leading-tight">
+            <p className="text-2xl font-bold mt-2 mb-6 leading-tight pt-10">
               What We Do At Exhibitia, we specialize in:
             </p>
             {/* Services Grid */}
@@ -632,7 +630,7 @@ export default function AboutPage() {
             </button> */}
             <div className="min-h-screen md:bg-gray-100 py-12">
               <div className="max-w-7xl mx-auto">
-                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
                   {services.map((service, index) => (
                     <motion.div
                       initial={{ opacity: 0, y: 100 }}
@@ -649,7 +647,7 @@ export default function AboutPage() {
 
                       {/* Card Content */}
                       <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
-                        <div className="relative h-48 overflow-hidden">
+                        <div className="relative h-80 overflow-hidden">
                           <img
                             src={service.image}
                             alt={service.title}
@@ -772,7 +770,7 @@ function Card() {
     //     </div>
     //   </div>
     // </div>
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 100 }}
@@ -781,7 +779,7 @@ function Card() {
         >
           Why Choose Us?
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((card, index) => (
             <motion.div
               initial={{ opacity: 0, y: 100 }}

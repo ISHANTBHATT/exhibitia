@@ -211,7 +211,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center mb-8 gap-4"
           >
-            <img src="/images/logo.png" alt="logo" className="w-52" />
+            <img src="/images/logo3.png" alt="logo" className="w-52" />
             {/* <h1 className="text-4xl font-bold text-center ">
               Exhibitia Designs
             </h1> */}
