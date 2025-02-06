@@ -11,7 +11,8 @@ export async function GET() {
     }
 
     const response = await fetch(
-      `${apiURL}?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=9`
+      // `${apiURL}?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=9`
+      ``
     );
 
     if (!response.ok) {

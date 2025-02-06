@@ -66,7 +66,7 @@ export default function GalleryContent({ initialPhotos }) {
             }
           `}
         >
-          <span className="relative z-10">Our Projects</span>
+          <span className="relative z-10">3D Desgins</span>
         </Button>
       </div>
       <AnimatePresence mode="wait">

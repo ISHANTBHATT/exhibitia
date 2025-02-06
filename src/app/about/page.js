@@ -577,16 +577,16 @@ export default function AboutPage() {
             <motion.h2
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-5xl font-bold mt-2 mb-6 leading-tight"
+              className="text-5xl font-bold mt-2 mb-6 leading-tight text-center "
             >
-              Welcome to Exhibitia
+              Welcome to Exhibitia!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-gray-600 mb-8"
+              className="text-gray-600 mb-8 text-center px-40 text tracking-wide"
             >
-              where creativity meets functionality in the world of exhibition
+              Where creativity meets functionality in the world of exhibition
               booth solutions. We are a team of dedicated professionals
               passionate about helping brands make a lasting impression at trade
               shows, conferences, and exhibitions. With a perfect blend of
@@ -597,13 +597,13 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-gray-600 mb-8"
+              className="text-gray-600 mb-8 px-40 tracking-wide text-center"
             >
-              Our Mission Our mission is to transform your vision into reality,
-              creating dynamic and impactful exhibition spaces that captivate
-              audiences and foster meaningful connections. We are committed to
-              delivering high-quality, customized solutions that align with your
-              brand identity and marketing goals.
+              Our Mission is to transform your vision into reality, creating
+              dynamic and impactful exhibition spaces that captivate audiences
+              and foster meaningful connections. We are committed to delivering
+              high-quality, customized solutions that align with your brand
+              identity and marketing goals.
             </motion.p>
 
             <p className="text-2xl font-bold mt-2 mb-6 leading-tight pt-10">
