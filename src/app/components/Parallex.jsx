@@ -101,7 +101,7 @@ function Parallax() {
         {/* Content with Scroll Animation */}
         <div className="relative h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight transform transition duration-1000 hover:scale-105">
-            Let's Start Work Today?
+            Let&apos;s Start Work Today?
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-12 transition-opacity duration-500 hover:opacity-90">
             We turn you on to pro lighting strategies to highlight features
