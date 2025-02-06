@@ -40,7 +40,7 @@ export default function GalleryContent({ initialPhotos }) {
         >
           <span className="relative z-10">Photos</span>
         </Button>
-        <Button
+        {/* <Button
           onClick={() => setActiveGallery("videos")}
           className={`
             px-4 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold transition-all duration-300 ease-in-out
@@ -53,7 +53,7 @@ export default function GalleryContent({ initialPhotos }) {
           `}
         >
           <span className="relative z-10">Videos</span>
-        </Button>
+        </Button> */}
         <Button
           onClick={() => setActiveGallery("projects")}
           className={`

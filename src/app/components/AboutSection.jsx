@@ -149,7 +149,7 @@ export function AboutSection() {
               </motion.h3>
             </div>
             <motion.p
-              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              className="text-lg text-muted-foreground max-w-4xl text-textcolor font-bold"
               variants={itemVariants}
             >
               Innovative Designs:
@@ -161,7 +161,7 @@ export function AboutSection() {
               </span>
             </motion.p>
             <motion.p
-              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              className="text-lg text-muted-foreground max-w-4xl text-textcolor font-bold"
               variants={itemVariants}
             >
               Custom Solutions:
@@ -174,7 +174,7 @@ export function AboutSection() {
               </span>
             </motion.p>
             <motion.div
-              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              className="text-lg text-muted-foreground max-w-4xl text-textcolor font-bold"
               variants={itemVariants}
             >
               Comprehensive Services:
@@ -192,7 +192,7 @@ export function AboutSection() {
               </span>
             </motion.div>
             <motion.p
-              className="text-lg text-muted-foreground max-w-xl text-textcolor font-bold"
+              className="text-lg text-muted-foreground max-w-4xl text-textcolor font-bold"
               variants={itemVariants}
             >
               Expert Guidance:
