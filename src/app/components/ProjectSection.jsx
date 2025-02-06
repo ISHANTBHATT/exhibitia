@@ -104,7 +104,7 @@ export default function Home() {
   };
 
   return (
-    <main className="h-full" ref={ref}>
+    <main className="h-full py-16" ref={ref}>
       {/* Header Section */}
       <motion.section
         className="container mx-auto px-4 py-12 text-center"
@@ -119,18 +119,18 @@ export default function Home() {
           PROJECTS
         </motion.h2>
         <motion.h2
-          className="text-4xl font-bold text-center mb-12"
+          className="text-xl md:text-2xl lg:text-4xl font-bold text-center"
           variants={itemVariants}
         >
           Transform Your Exhibition Presence
           <br />
-          Custom booth designs that capture attention and drive engagement
+          Custom Booth Designs that Capture Attention and Drive Engagement
         </motion.h2>
       </motion.section>
 
       {/* Main Content Grid */}
       <motion.section
-        className="container mx-auto px-4 grid md:grid-cols-2 gap-6 mb-6"
+        className=" mx-auto px-4 grid md:grid-cols-2 gap-6 pt-16"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

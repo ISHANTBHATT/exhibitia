@@ -48,7 +48,7 @@ Utilize good lighting to highlight products.`,
 
   return (
     <section className="py-16 px-4">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="w-full mx-auto grid md:grid-cols-2 gap-12">
         <div>
           <h3 className="text-muted-foreground mb-2">POPULAR QUESTIONS</h3>
           <h2 className="text-4xl font-bold mb-8">

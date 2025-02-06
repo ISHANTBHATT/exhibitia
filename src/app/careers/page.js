@@ -10,21 +10,25 @@ const values = [
     icon: Lightbulb,
     title: "Innovation",
     description: "We push boundaries and embrace new ideas.",
+    gradient: "from-pink-500 to-blue-500",
   },
   {
     icon: Users,
     title: "Collaboration",
     description: "We work together to achieve greatness.",
+    gradient: "from-purple-500 to-pink-500",
   },
   {
     icon: Rocket,
     title: "Growth",
     description: "We're committed to personal and professional development.",
+    gradient: "from-blue-500 to-teal-500",
   },
   {
     icon: Heart,
     title: "Passion",
     description: "We love what we do and it shows in our work.",
+    gradient: "from-red-500 to-orange-500",
   },
 ];
 
@@ -80,16 +84,16 @@ export default function CareersPage() {
         </motion.div>
       </div>
 
-      <div className="container mx-auto py-12 px-4">
+      <div className=" mx-auto py-12">
         <div className="mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl font-bold mb-6 text-center"
+            className="text-4xl font-bold mb-6 text-center"
           >
             Our Values
           </motion.h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
               <Card key={index}>
                 <CardHeader>
@@ -101,17 +105,72 @@ export default function CareersPage() {
                 </CardContent>
               </Card>
             ))}
+          </div> */}
+          <div className="h-full bg-gray-100 py-16 ">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                {values.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <motion.div
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      key={index}
+                      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-1 transition-all duration-300"
+                    >
+                      {/* Gradient Header */}
+                      <div
+                        className={`h-16 bg-gradient-to-r ${item.gradient} relative`}
+                      >
+                        {/* Icon Circle */}
+                        <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2">
+                          <div className="bg-white p-3 rounded-full shadow-lg">
+                            <Icon className="w-6 h-6 text-gray-700" />
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Content */}
+                      <div className="px-6 pt-10 pb-6">
+                        <h3 className="text-xl font-bold text-gray-800 text-center mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-600 text-center text-sm">
+                          {item.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between">
-          <Image
-            src="/images/career.jpg"
-            alt="carrer"
-            width={1000}
-            height={500}
+        <div className="flex flex-col md:flex-row justify-between overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
             className="w-full md:w-1/2"
-          />
-          <CareersForm />
+          >
+            <Image
+              src="/images/career.jpg"
+              alt="carrer"
+              width={1000}
+              height={500}
+              className="w-full h-full"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+            className="w-full md:w-1/2"
+          >
+            <CareersForm />
+          </motion.div>
         </div>
       </div>
     </div>

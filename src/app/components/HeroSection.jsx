@@ -254,7 +254,7 @@ export function HeroSection() {
 
   return (
     <section className="pt-20 pb-12 sm:px-10 bg-secondary" ref={ref}>
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <motion.div
           className="mb-12 flex"
           variants={containerVariants}
@@ -299,8 +299,8 @@ export function HeroSection() {
             <ProjectCard
               id="bodycare"
               title="Bodycare"
-              location="Jakarta"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/bodycare12.jpg"
             />
           </motion.div>
@@ -311,8 +311,8 @@ export function HeroSection() {
             <ProjectCard
               id="saint-gobain"
               title="Saint Gobain"
-              location="New York"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/saint2.jpg"
             />
           </motion.div>
@@ -323,8 +323,8 @@ export function HeroSection() {
             <ProjectCard
               id="dupont"
               title="Dupont"
-              location="London"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/dupont6.jpg"
             />
           </motion.div>
@@ -335,8 +335,8 @@ export function HeroSection() {
             <ProjectCard
               id="groversons"
               title="Groversons"
-              location="Paris"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/groversons1.jpg"
             />
           </motion.div>
@@ -347,8 +347,8 @@ export function HeroSection() {
             <ProjectCard
               id="twiga"
               title="Twiga"
-              location="Dubai"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/twiga1.jpg"
             />
           </motion.div>
@@ -359,8 +359,8 @@ export function HeroSection() {
             <ProjectCard
               id="interarch"
               title="Interarch"
-              location="Stockholm"
-              category="Interior Design"
+              location="India"
+              category="Exhibition Booth"
               image="/images/interarch6.jpg"
             />
           </motion.div>
