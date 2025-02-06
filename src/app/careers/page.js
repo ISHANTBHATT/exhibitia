@@ -126,7 +126,7 @@ export default function CareersPage() {
                         {/* Icon Circle */}
                         <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2">
                           <div className="bg-white p-3 rounded-full shadow-lg">
-                            <Icon className="w-6 h-6 text-gray-700" />
+                            <Icon className="w-10 h-10 text-gray-700" />
                           </div>
                         </div>
                       </div>
