@@ -15,50 +15,76 @@ import {
 export default function WhyChooseUs() {
   const features = [
     {
-      number: "1",
-      // icon: <Sparkles className="w-6 h-6 text-neutral-700" />,
-      icon: Sparkles,
+      icon: <Sparkles className="w-10 h-10 text-orange-500" />,
       title: "Innovative Designs",
-      color: "bg-[#F15A3C]",
-      textColor: "text-[#F15A3C]",
       description:
         "Our creative team stays ahead of trends to bring fresh, eye-catching ideas to life.",
-      position: "bottom",
     },
     {
-      number: "2",
-      icon: <Shield className="w-6 h-6 text-neutral-700" />,
-      icon: Shield,
+      icon: <Shield className="w-10 h-10 text-orange-500" />,
       title: "Exceptional Quality",
-      color: "bg-[#0B9AF1]",
-      textColor: "text-[#0B9AF1]",
       description:
         "We pride ourselves on delivering booths that combine aesthetics with durability.",
-      position: "top",
     },
     {
-      number: "3",
-      // icon: <Users className="w-6 h-6 text-neutral-700" />,
-      icon: Users,
+      icon: <Users className="w-10 h-10 text-orange-500" />,
       title: "Customer Focus",
-      color: "bg-[#00D671]",
-      textColor: "text-[#00D671]",
       description:
         "Your success is our priority, and we're dedicated to providing an outstanding experience from start to finish.",
-      position: "bottom",
     },
     {
-      number: "4",
-      // icon: <Globe className="w-6 h-6 text-neutral-700" />,
-      icon: Globe,
+      icon: <Globe className="w-10 h-10 text-orange-500" />,
       title: "Global Reach",
-      color: "bg-[#8C52FF]",
-      textColor: "text-[#8C52FF]",
       description:
         "Whether your event is local or international, our network and expertise ensure flawless execution.",
-      position: "top",
     },
   ];
+  // const features = [
+  //   {
+  //     number: "1",
+  //     icon: <Sparkles className="w-6 h-6 text-neutral-700" />,
+  //     // icon: Sparkles,
+  //     title: "Innovative Designs",
+  //     color: "bg-[#F15A3C]",
+  //     textColor: "text-[#F15A3C]",
+  //     description:
+  //       "Our creative team stays ahead of trends to bring fresh, eye-catching ideas to life.",
+  //     position: "bottom",
+  //   },
+  //   {
+  //     number: "2",
+  //     icon: <Shield className="w-6 h-6 text-neutral-700" />,
+  //     // icon: Shield,
+  //     title: "Exceptional Quality",
+  //     color: "bg-[#0B9AF1]",
+  //     textColor: "text-[#0B9AF1]",
+  //     description:
+  //       "We pride ourselves on delivering booths that combine aesthetics with durability.",
+  //     position: "top",
+  //   },
+  //   {
+  //     number: "3",
+  //     icon: <Users className="w-6 h-6 text-neutral-700" />,
+  //     // icon: Users,
+  //     title: "Customer Focus",
+  //     color: "bg-[#00D671]",
+  //     textColor: "text-[#00D671]",
+  //     description:
+  //       "Your success is our priority, and we're dedicated to providing an outstanding experience from start to finish.",
+  //     position: "bottom",
+  //   },
+  //   {
+  //     number: "4",
+  //     icon: <Globe className="w-6 h-6 text-neutral-700" />,
+  //     // icon: Globe,
+  //     title: "Global Reach",
+  //     color: "bg-[#8C52FF]",
+  //     textColor: "text-[#8C52FF]",
+  //     description:
+  //       "Whether your event is local or international, our network and expertise ensure flawless execution.",
+  //     position: "top",
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -71,7 +97,7 @@ export default function WhyChooseUs() {
           Why Choose Us?
         </motion.h2>
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -92,7 +118,7 @@ export default function WhyChooseUs() {
               </Card>
             </motion.div>
           ))}
-        </div> */}
+        </div>
         {/* <div className="w-full max-w-7xl mx-auto px-4 py-16">
           <div className="relative">
       
@@ -146,7 +172,7 @@ export default function WhyChooseUs() {
             </div>
           </div>
         </div>  */}
-        <div className="w-full max-w-7xl mx-auto px-4">
+        {/* <div className="w-full max-w-7xl mx-auto px-4">
           <div className="relative">
             <div className="absolute top-1/2 left-0 right-0 h-[2px] border-t-2 border-dashed border-gray-300" />
 
@@ -163,7 +189,7 @@ export default function WhyChooseUs() {
                 >
                   <div className="relative md:absolute md:top-1/2 md:-translate-y-1/2">
                     <div
-                      className={`bg-neutral-800 w-16 h-16 rounded-lg flex items-center justify-center`}
+                      className={`bg-orange-500 w-16 h-16 rounded-lg flex items-center justify-center`}
                     >
                       <step.icon className="w-8 h-8 text-white" />
                     </div>
@@ -178,7 +204,7 @@ export default function WhyChooseUs() {
                     <div className="flex flex-col items-center text-center">
                       <div className="flex items-center gap-2 mb-3">
                         <div
-                          className={`bg-neutral-800 text-white font-bold rounded-lg w-8 h-8 flex items-center justify-center`}
+                          className={`bg-orange-500 text-white font-bold rounded-lg w-8 h-8 flex items-center justify-center`}
                         >
                           {step.number}
                         </div>
@@ -195,7 +221,7 @@ export default function WhyChooseUs() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
           <motion.div

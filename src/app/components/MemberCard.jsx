@@ -7,7 +7,7 @@ function MemberCard({ key, img, name, link }) {
       className=" w-60 h-40  mx-10 hover:shadow-lg  bg-[#fcfcfd] border-gray-400 rounded-xl"
     >
       <a
-        class="relative flex items-center justify-center  w-full h-full hover:bg-black/80 group rounded-xl"
+        class="relative flex items-center justify-center  w-full h-full hover:bg-black/30 group rounded-xl"
         href={link}
         target="_blank"
         rel="noopener noreferrer"
@@ -17,7 +17,7 @@ function MemberCard({ key, img, name, link }) {
           className="absolute  group-hover:opacity-50 p-10"
           src={img}
         />
-        <div class="relative p-5">
+        {/* <div class="relative p-5">
           <div class="">
             <div class="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
               <div class="p-2">
@@ -25,7 +25,7 @@ function MemberCard({ key, img, name, link }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </a>
     </div>
   );

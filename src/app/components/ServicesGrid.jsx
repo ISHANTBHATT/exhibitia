@@ -115,7 +115,7 @@ function ServicesGrid() {
 
   return (
     <>
-      <div className="flex flex-col gap-20 px-10 mt-10 overflow-hidden">
+      {/* <div className="flex flex-col gap-20 px-10 mt-10 overflow-hidden">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -146,7 +146,7 @@ function ServicesGrid() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              {/* <service.icon className="w-12 h-12 text-[#0089f2]" /> */}
+              <service.icon className="w-12 h-12 text-[#0089f2]" />
               <h1 className="text-2xl font-bold text-[#142752] text-center">
                 {service.title}
               </h1>
@@ -172,18 +172,9 @@ function ServicesGrid() {
             </motion.div>
           </motion.div>
         ))}
-      </div>
-      <section className="py-16 px-4 md:px-6 bg-gray-50">
+      </div> */}
+      <section className="py-16 px-4 md:px-6 bg-gray-100">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Services
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Providing top-notch branding, digital experiences, and web
-              development through tailored solutions that fit your unique needs.
-            </p>
-          </div>
           <div className="space-y-6">
             {services.map((service, index) => {
               const Icon = service.icon;
@@ -191,6 +182,7 @@ function ServicesGrid() {
 
               return (
                 <motion.div
+                  id="card"
                   key={index}
                   initial={{ opacity: 0, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}

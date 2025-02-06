@@ -241,15 +241,11 @@ const services = [
     textColor: "text-black",
   },
   {
-    title: "PHOTOGRAPHY",
+    title: "PHOTOGRAPHY AND VIDEO PRODUCTION ",
     icon: Camera,
     description:
       "Visual that captures the essence of brands, highlights intricate details, and creates visually impactful narratives to engage audiences.",
-    details: [
-      "Professional event and product photography",
-      "360° booth and exhibit documentation",
-      "Post-production and digital enhancement",
-    ],
+    details: ["Corporate Films", "Product Photography", "AD Films"],
     color: "bg-gradient-to-br from-cyan-500 to-blue-500",
     hoverColor: "hover:from-cyan-600 hover:to-blue-600",
     textColor: "text-white",
@@ -258,19 +254,19 @@ const services = [
 
 const features = [
   {
-    icon: <Trophy className="w-10 h-10 text-neutral-700" />,
+    icon: <Trophy className="w-10 h-10 text-white" />,
     title: "Experienced team of professionals",
   },
   {
-    icon: <ShieldCheck className="w-10 h-10 text-neutral-700" />,
+    icon: <ShieldCheck className="w-10 h-10 text-white" />,
     title: "End-to-end service for hassle-free experience",
   },
   {
-    icon: <Target className="w-10 h-10 text-neutral-700" />,
+    icon: <Target className="w-10 h-10 text-white" />,
     title: "Commitment to quality and innovation",
   },
   {
-    icon: <PiggyBank className="w-10 h-10 text-neutral-700" />,
+    icon: <PiggyBank className="w-10 h-10 text-white" />,
     title: "Competitive pricing",
   },
 ];
@@ -287,37 +283,61 @@ export default function ServicesPage() {
         ></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+            <motion.h1
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
+            >
               Our Services
-            </h1>
-            <p className="mt-6 max-w-2xl mx-auto text-xl text-slate-300">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="mt-6 max-w-2xl mx-auto text-xl text-slate-300"
+            >
               Comprehensive solutions for exhibitions, events, interiors, and
               brand activations
-            </p>
-            <div className="mt-10 flex justify-center">
-              <Link
-                href=""
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-10 flex justify-center"
+            >
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("card")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-slate-900 bg-white hover:bg-neutral-700 hover:text-white transition duration-150 ease-in-out"
               >
                 Explore Services
                 <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
-              </Link>
-            </div>
+              </button>
+            </motion.div>
           </div>
         </div>
       </section>
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 py-12 px-4 md:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-200/50 py-12 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-8">
           <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+            <motion.h1
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="text-4xl font-bold tracking-tight sm:text-5xl"
+            >
               Our Services
-            </h1>
-            <p className="text-slate-600 max-w-2xl mx-auto">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="text-slate-600 max-w-2xl mx-auto"
+            >
               At Exhibitia, we specialize in creating impactful exhibition
               booths that elevate your brand presence and captivate your
               audience. Our comprehensive range of services ensures your booth
               stands out at any event. Here’s how we can help:
-            </p>
+            </motion.p>
           </div>
 
           {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -380,8 +400,8 @@ export default function ServicesPage() {
 
       <div className="max-w-7xl mx-auto pt-8">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           className="text-4xl font-bold text-center mb-16 text-gray-900"
         >
           Why Choose Us?
@@ -390,19 +410,19 @@ export default function ServicesPage() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="bg-white h-full border-gray-100 hover:shadow-lg transition-shadow duration-300">
+              <Card className="bg-orange-500 h-full border-gray-100 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="rounded-full bg-primary/10 p-3 w-fit mb-4">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                  <h3 className="text-xl font-semibold mb-2 text-white">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  {/* <p className="text-gray-600">{feature.description}</p> */}
                 </CardContent>
               </Card>
             </motion.div>
@@ -414,7 +434,7 @@ export default function ServicesPage() {
           quote.
         </p>
       </div>
-      <BeforeAfterSlider />
+      {/* <BeforeAfterSlider /> */}
       {/* <section className="bg-secondary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold sm:text-4xl">

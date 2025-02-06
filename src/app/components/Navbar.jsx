@@ -44,9 +44,9 @@ export default function Navbar() {
                 className=""
               /> */}
                 {isScrolled || !isHomePage ? (
-                  <img src="/images/logo2.png" alt="logo" className="w-40" />
+                  <img src="/images/logo4.png" alt="logo" className="w-40" />
                 ) : (
-                  <img src="/images/logo2.png" alt="logo" className="w-40" />
+                  <img src="/images/logo4.png" alt="logo" className="w-40" />
                 )}
               </div>
             </Link>
@@ -56,14 +56,17 @@ export default function Navbar() {
               <Link href="/">
                 <p className="text-lg font-medium hover:text-gray-500">Home</p>
               </Link>
-              <Link href="/gallery">
-                <p className="text-lg font-medium hover:text-gray-500">
-                  Gallery
-                </p>
+              <Link href="/about">
+                <p className="text-lg font-medium hover:text-gray-500">About</p>
               </Link>
               <Link href="/services">
                 <p className="text-lg font-medium hover:text-gray-500">
                   Services
+                </p>
+              </Link>
+              <Link href="/gallery">
+                <p className="text-lg font-medium hover:text-gray-500">
+                  Gallery
                 </p>
               </Link>
               <Link href="/careers">
@@ -75,9 +78,6 @@ export default function Navbar() {
                 <p className="text-lg font-medium hover:text-gray-500">
                   Contact
                 </p>
-              </Link>
-              <Link href="/about">
-                <p className="text-lg font-medium hover:text-gray-500">About</p>
               </Link>
             </div>
 

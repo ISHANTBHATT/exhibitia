@@ -26,7 +26,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-6 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/share/19kCCNb8JC/"
                 target="_blank"
                 className="text-white  bg-neutral-700 hover:bg-neutral-600 rounded-full p-4"
               >

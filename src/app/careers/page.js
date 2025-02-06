@@ -4,7 +4,7 @@ import { Lightbulb, Users, Rocket, Heart } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const values = [
   {
     icon: Lightbulb,
@@ -31,66 +31,64 @@ const values = [
 export default function CareersPage() {
   return (
     <div className="min-h-screen py-16">
-      {/* <div className="flex justify-around bg-secondary text-white py-20">
-        <div className="text-center px-4">
-          <h1 className="text-4xl font-bold mb-4">Join Our Team</h1>
-          <p className="text-xl mb-8">
-            Be part of something extraordinary. Shape the future with us.
-          </p>
-          <Button
-            variant="secondary"
-            size="lg"
-            onClick={() =>
-              document
-                .getElementById("application-form")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-            className="bg-neutral-700 text-white hover:bg-neutral-600"
-          >
-            Apply Now
-          </Button>
-        </div>
-        <Image
-          src="/images/career2.png"
-          alt=""
-          width={300}
-          height={100}
-          className=""
-        />
-      </div> */}
-
       <div className="relative flex justify-around py-20 text-white">
         <div className="absolute top-0 left-0 w-full h-full bg-secondary -z-10 clip-diagonal"></div>
         <div className="text-center px-4">
-          <h1 className="text-4xl font-bold mb-4">Join Our Team</h1>
-          <p className="text-xl mb-8">
-            Be part of something extraordinary. Shape the future with us.
-          </p>
-          <Button
-            variant="secondary"
-            size="lg"
-            onClick={() =>
-              document
-                .getElementById("application-form")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-            className="bg-neutral-700 text-white hover:bg-neutral-600"
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-4xl font-bold mb-4"
           >
-            Apply Now
-          </Button>
+            Join Our Team
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-xl mb-8"
+          >
+            Be part of something extraordinary. Shape the future with us.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <Button
+              variant="secondary"
+              size="lg"
+              onClick={() =>
+                document
+                  .getElementById("application-form")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-neutral-700 text-white hover:bg-neutral-600"
+            >
+              Apply Now
+            </Button>
+          </motion.div>
         </div>
-        <Image
-          src="/images/career2.png"
-          alt="carrer"
-          width={900}
-          height={100}
-          className="w-80 hidden sm:flex"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <Image
+            src="/images/career2.png"
+            alt="carrer"
+            width={900}
+            height={100}
+            className="w-80 hidden sm:flex"
+          />
+        </motion.div>
       </div>
 
       <div className="container mx-auto py-12 px-4">
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-center">Our Values</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-3xl font-bold mb-6 text-center"
+          >
+            Our Values
+          </motion.h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
               <Card key={index}>

@@ -124,7 +124,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 export default function ContactPage() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -149,7 +149,7 @@ export default function ContactPage() {
     setIsLoading(false);
   };
   return (
-    <div className="min-h-screen  text-white py-10">
+    <div className="min-h-screen  text-white py-10 overflow-hidden">
       {/* Header Section */}
       {/* <div className="relative h-[200px] bg-secondary">
         <div
@@ -172,33 +172,56 @@ export default function ContactPage() {
       <div className="relative flex justify-around py-20 text-white">
         <div className="absolute top-0 left-0 w-full h-full bg-secondary -z-10 clip-diagonal"></div>
         <div className="px-4 h-full flex flex-col justify-end pb-8">
-          <h1 className="text-6xl font-bold text-white mb-2">Contact</h1>
-          <div className="text-white/80 flex items-center gap-2 text-sm">
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-6xl font-bold text-white mb-2"
+          >
+            Contact
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-white/80 flex items-center gap-2 text-sm"
+          >
             <Link href="/" className="hover:text-white">
               HOME
             </Link>
             <span>/</span>
             <span>CONTACT</span>
-          </div>
+          </motion.div>
         </div>
-        <Image
-          src="/images/contact2.png"
-          alt="carrer"
-          width={1000}
-          height={100}
-          className="w-80 hidden sm:flex"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <Image
+            src="/images/contact2.png"
+            alt="carrer"
+            width={1000}
+            height={100}
+            className="w-80 hidden sm:flex"
+          />
+        </motion.div>
       </div>
       <header className="bg-white text-secondary py-6">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center mb-8 gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center items-center mb-8 gap-4"
+          >
             <img src="/images/logo.png" alt="logo" className="w-52" />
             {/* <h1 className="text-4xl font-bold text-center ">
               Exhibitia Designs
             </h1> */}
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-600">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-600"
+          >
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
               <span>Pitampura, Delhi-110034</span>
@@ -212,26 +235,35 @@ export default function ContactPage() {
               <span>9999797730,</span>
               <span>9999794303</span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </header>
 
       {/* Existing Contact Section */}
       <div className="container mx-auto px-10 py-12 bg-secondary">
-        <div className="mb-8">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="mb-8"
+        >
           <h2 className="text-sm uppercase tracking-wider mb-2">
             OUR HEAD OFFICE
           </h2>
           <h1 className="text-4xl md:text-5xl font-bold">
             Connect With Us Today?
           </h1>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Map Section */}
-          <div className="w-full h-[500px] bg-gray-200 rounded-lg overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+            className="w-full h-[500px] bg-gray-200 rounded-lg overflow-hidden"
+          >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246115632!2d-87.78192368426528!3d41.89680397922119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v163130251243!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55992.51818745782!2d77.08552068483678!3d28.703631509973352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d5b0619f3f%3A0x2208402cf282fb02!2sPitampura%2C%20Delhi!5e0!3m2!1sen!2sin!4v1738830008644!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -239,89 +271,101 @@ export default function ContactPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <Card className="p-8  text-secondary">
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">Personal Information</h2>
-                <div className="grid md:grid-cols-2 gap-4">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+          >
+            <Card className="p-8  text-secondary">
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="space-y-6">
+                  <h2 className="text-2xl font-semibold">
+                    Personal Information
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName">First Name*</Label>
+                      <Input
+                        id="firstName"
+                        placeholder="Enter your first name"
+                        className="bg-white text-black"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName">Last Name*</Label>
+                      <Input
+                        id="lastName"
+                        placeholder="Enter your last name"
+                        className="bg-white text-black"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        required
+                      />
+                    </div>
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name*</Label>
+                    <Label htmlFor="email">Email*</Label>
                     <Input
-                      id="firstName"
-                      placeholder="Enter your first name"
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
                       className="bg-white text-black"
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name*</Label>
+                    <Label htmlFor="phone">Phone*</Label>
                     <Input
-                      id="lastName"
-                      placeholder="Enter your last name"
+                      id="phone"
+                      type="tel"
+                      placeholder="Enter your phone number"
                       className="bg-white text-black"
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message*</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Enter your message"
+                      className="bg-white text-black min-h-[120px]"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       required
                     />
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email*</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    className="bg-white text-black"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone*</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="Enter your phone number"
-                    className="bg-white text-black"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message*</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Enter your message"
-                    className="bg-white text-black min-h-[120px]"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    required
-                  />
-                </div>
-              </div>
 
-              <Button
-                type="submit"
-                className="w-full bg-secondary hover:bg-neutral-700 text-white py-6"
-              >
-                Send Message
-              </Button>
-            </form>
-          </Card>
+                <Button
+                  type="submit"
+                  className="w-full bg-secondary hover:bg-neutral-700 text-white py-6"
+                >
+                  Send Message
+                </Button>
+              </form>
+            </Card>
+          </motion.div>
         </div>
       </div>
 
       {/* Clients Section */}
       <section className="bg-white text-black py-16">
         <div className="flex lg:flex-row flex-col justify-between px-10">
-          <div className="flex flex-col gap-10 mb-12">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="flex flex-col gap-10 mb-12"
+          >
             <div>
               <p className="text-[#8B8455] mb-2">OUR CLIENTS</p>
               <h2 className="text-4xl font-bold">
@@ -333,7 +377,7 @@ export default function ContactPage() {
                 Be Our Next Client
               </Button>
             </Link>
-          </div>
+          </motion.div>
 
           {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {clients.map((client, index) => (
@@ -346,17 +390,22 @@ export default function ContactPage() {
             ))}
           </div> */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {clients.map((partner) => (
-              <Card
+            {clients.map((partner, index) => (
+              <motion.div
                 key={partner.id}
-                className="p-6 flex items-center justify-center hover:shadow-lg transition-shadow"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="w-full h-full"
               >
-                <img
-                  src={partner.img}
-                  alt=""
-                  className="max-w-[160px]  h-auto"
-                />
-              </Card>
+                <Card className="p-6 w-full h-full flex items-center justify-center hover:shadow-lg transition-shadow">
+                  <img
+                    src={partner.img}
+                    alt=""
+                    className="max-w-[160px]  h-auto"
+                  />
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -367,7 +416,7 @@ export default function ContactPage() {
 
 const clients = [
   { id: 1, img: "/images/client1.png" },
-  { id: 2, img: "/images/client17.webp" },
+  { id: 2, img: "/images/client17.png" },
   { id: 3, img: "/images/client7.png" },
   { id: 4, img: "/images/client18.png" },
   { id: 5, img: "/images/client3.png" },

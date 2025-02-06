@@ -15,23 +15,9 @@ const testimonials = [
   {
     id: 2,
     name: "- Ribbel International",
-    image: "/images/person2.png",
+    image: "/images/ribbel.jpeg",
     quote:
       "Their attention to detail and commitment to excellence made all the difference in our event experience.",
-  },
-  {
-    id: 3,
-    name: "aara",
-    image: "/images/person.png",
-    quote:
-      "Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Blandit aliquam etiam erat velit scelerisque. Mauris ultrices eros in cursus turpis massa. Imperdiet dui accumsan sit amet.",
-  },
-  {
-    id: 4,
-    name: "ara",
-    image: "/images/person.png",
-    quote:
-      "Non diam phasellus vestibulum lorem sed. Proin libero nunc consequat interdum varius sit amet mattis. Enim diam vulputate ut pharetra. Arcu non odio euismod lacinia at quis. Non diam phasellus vestibulum lorem sed. ",
   },
 ];
 

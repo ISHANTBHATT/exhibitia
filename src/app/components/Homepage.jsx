@@ -27,7 +27,7 @@ function Homepage() {
         "Their attention to detail and commitment to excellence made all the difference in our event experience.",
       name: "Ribbel International",
       designation: "CTO at Ribbel International",
-      src: "/images/2.jpg",
+      src: "/images/ribbel.jpeg",
     },
   ];
   return (
