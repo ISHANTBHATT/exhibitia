@@ -770,7 +770,7 @@ function Card() {
     //     </div>
     //   </div>
     // </div>
-    <div className="min-h-screen bg-gray-100 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="h-full bg-gray-100 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 100 }}

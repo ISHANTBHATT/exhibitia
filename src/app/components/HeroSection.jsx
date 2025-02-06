@@ -256,7 +256,7 @@ export function HeroSection() {
     <section className="pt-20 pb-12 sm:px-10 bg-secondary" ref={ref}>
       <div className=" mx-auto px-4">
         <motion.div
-          className="mb-12 flex"
+          className="mb-12 flex justify-between"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
