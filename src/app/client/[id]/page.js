@@ -191,12 +191,12 @@ const clients = {
     category: "Interior Design",
     BannerImage: "/images/Groversons.jpg",
     images: [
-      "/images/Groversons2.jpg",
-      "/images/Groversons3.jpg",
-      "/images/Groversons4.jpg",
-      "/images/Groversons5.jpg",
-      "/images/Groversons6.jpg",
-      "/images/Groversons7.jpg",
+      "/images/groversons2.jpg",
+      "/images/groversons3.jpg",
+      "/images/groversons4.jpg",
+      "/images/groversons5.jpg",
+      "/images/groversons6.jpg",
+      "/images/groversons7.jpg",
     ],
     description:
       "Grover Sons' Paris Beauty is a trusted name in the beauty and personal care industry, known for its high-quality skincare and cosmetic products. With a commitment to innovation and excellence, the brand offers a diverse range of beauty solutions that cater to modern consumer needs. Paris Beauty has built a strong reputation for its premium formulations, ensuring effectiveness and customer satisfaction. Continuously evolving with industry trends, the brand remains a favorite among beauty enthusiasts. We at Exhibitia have been honored to provide them with exceptional exhibition booth services, helping them create a remarkable presence at prestigious events.",
@@ -206,7 +206,7 @@ const clients = {
     location: "Dubai",
     category: "Interior Design",
     BannerImage: "/images/Twiga.jpg",
-    images: ["/images/Twiga1.jpg"],
+    images: ["/images/twiga1.jpg"],
     description:
       "Twiga is a renowned brand known for its high-quality insulation and building solutions, offering superior performance across various industries. With a strong focus on innovation and sustainability, the company delivers reliable products that enhance energy efficiency and structural durability. Twiga has earned a reputation for excellence, consistently meeting industry standards with its cutting-edge solutions. As a long-standing partner, we at Exhibitia have had the privilege of supporting their brand presence with outstanding exhibition booth services, ensuring they stand out at key industry events.",
   },
