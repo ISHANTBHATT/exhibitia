@@ -584,7 +584,7 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-gray-600 mb-8 text-center px-40 text tracking-wide"
+              className="text-gray-600 mb-8 text-justify md:text-center px-4 lg:px-40 tracking-wide"
             >
               Where creativity meets functionality in the world of exhibition
               booth solutions. We are a team of dedicated professionals
@@ -597,7 +597,7 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-gray-600 mb-8 px-40 tracking-wide text-center"
+              className="text-gray-600 mb-8 px-4 lg:px-40 tracking-wide text-justify md:text-center"
             >
               Our Mission is to transform your vision into reality, creating
               dynamic and impactful exhibition spaces that captivate audiences

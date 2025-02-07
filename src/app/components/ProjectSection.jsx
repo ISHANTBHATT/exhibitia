@@ -199,27 +199,21 @@ export default function Home() {
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-5xl md:text-4xl lg:text-5xl font-bold mb-2">
-                  220+
-                </p>
+                <p className="text-4xl lg:text-5xl font-bold mb-2">220+</p>
                 <p className="text-sm uppercase">Projects</p>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-5xl md:text-4xl lg:text-5xl font-bold mb-2">
-                  50+
-                </p>
+                <p className="text-4xl lg:text-5xl font-bold mb-2">50+</p>
                 <p className="text-sm uppercase">Technical Teams</p>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-5xl md:text-4xl lg:text-5xl font-bold mb-2">
-                  14+
-                </p>
+                <p className="text-4xl lg:text-5xl font-bold mb-2">14+</p>
                 <p className="text-sm uppercase">Years of Experience</p>
               </motion.div>
             </div>

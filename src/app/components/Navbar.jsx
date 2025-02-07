@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { RiMenu2Line } from "react-icons/ri";
 import { usePathname } from "next/navigation";
-// import AnimatedMenu from "./AnimatedMenu";
+import AnimatedMenu from "./AnimatedMenu";
 import Image from "next/image";
 export default function Navbar() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -81,9 +82,13 @@ export default function Navbar() {
               </Link>
             </div>
 
-            <button className="p-2 ">
+            <button className="p-2 " onClick={() => setIsMenuOpen(true)}>
               <RiMenu2Line className="h-6 w-6" />
             </button>
+            <AnimatedMenu
+              isOpen={isMenuOpen}
+              onClose={() => setIsMenuOpen(false)}
+            />
             {/* <AnimatedMenu /> */}
           </div>
         </div>
