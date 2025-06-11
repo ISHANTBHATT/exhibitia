@@ -85,7 +85,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function Home() {
+export default function ProjectSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 

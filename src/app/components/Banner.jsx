@@ -58,7 +58,7 @@ import Link from "next/link";
 const slides = [
   {
     subtitle: "Welcome to Exhibitia!",
-    title: "Your Premier Exhibition Booth Partner",
+    title: "Your Premium Exhibition Booth Partner",
     description:
       "At Exhibitia, we specialize in creating exceptional exhibition booth experiences that captivate audiences and elevate your brand presence. Whether you're a small startup or an established enterprise, we provide tailored solutions designed to meet your unique needs and help you stand out at events.",
   },
@@ -97,22 +97,28 @@ export default function Banner() {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="absolute left-2 lg:left-6 top-2/3 -translate-y-1/2 hidden md:flex md:flex-col gap-6 text-white z-10 ">
         <div className="flex flex-col gap-4 ">
-          <Link href="https://www.facebook.com/share/19kCCNb8JC/">
+          <Link
+            href="https://www.facebook.com/share/19kCCNb8JC/"
+            target="_blank"
+          >
             <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
               <FaFacebookF className="w-6 h-6 cursor-pointer" />
             </div>
           </Link>
-          <Link href="https://www.instagram.com/exhibitia01/">
+          <Link href="https://www.instagram.com/exhibitia01/" target="_blank">
             <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
               <IoLogoInstagram className="w-6 h-6 cursor-pointer" />
             </div>
           </Link>
-          <Link href="">
+          <Link href="" target="_blank">
             <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
               <FaYoutube className="w-6 h-6 cursor-pointer" />
             </div>
           </Link>
-          <Link href="https://www.linkedin.com/in/sunitkataria/">
+          <Link
+            href="https://www.linkedin.com/in/sunitkataria/"
+            target="_blank"
+          >
             <div className="w-10 h-10 border-[1px] rounded-lg border-white flex items-center justify-center -rotate-90 hover:bg-secondary ">
               <FaLinkedin className="w-6 h-6 cursor-pointer" />
             </div>
@@ -146,15 +152,17 @@ export default function Banner() {
             Know More
             <span className="ml-2">→</span>
           </button> */}
-          <button className="bg-secondary hover:bg-neutral-700 text-white px-8 py-3 inline-flex items-center gap-2 rounded-full transition-colors">
-            Know More
-            <span className="ml-2">→</span>
-          </button>
+          <Link href="/about">
+            <button className="bg-secondary hover:bg-neutral-700 text-white px-8 py-3 inline-flex items-center gap-2 rounded-full transition-colors">
+              Know More
+              <span className="ml-2">→</span>
+            </button>
+          </Link>
         </motion.div>
       </div>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -167,7 +175,7 @@ export default function Banner() {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Scroll More */}
       <div className="hidden md:flex absolute right-8 top-2/3 -translate-y-1/2 z-10">
