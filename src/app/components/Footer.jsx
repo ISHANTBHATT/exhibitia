@@ -13,7 +13,7 @@ export function Footer() {
           <div className="mb-4 md:mb-0">
             <div className="flex items-center space-x-2">
               <Image
-                src="/images/logo4.png"
+                src="/images/logo-white.png"
                 alt="logo"
                 width={150}
                 height={150}

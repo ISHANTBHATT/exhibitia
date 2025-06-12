@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="relative z-20">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-between ">
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center gap-2 border-r-[0.1px] border-gray-300">
@@ -45,15 +45,23 @@ export default function Navbar() {
                 className=""
               /> */}
                 {isScrolled || !isHomePage ? (
-                  <img src="/images/logo4.png" alt="logo" className="w-40" />
+                  <img
+                    src="/images/logo-white.png"
+                    alt="logo"
+                    className="w-40 md:w-52"
+                  />
                 ) : (
-                  <img src="/images/logo4.png" alt="logo" className="w-40" />
+                  <img
+                    src="/images/logo-white.png"
+                    alt="logo"
+                    className="w-40 md:w-52"
+                  />
                 )}
               </div>
             </Link>
 
             {/* Navigation Links */}
-            <div className="hidden lg:flex w-full space-x-20 px-10">
+            <div className="hidden lg:flex w-full space-x-20 px-10 py-6">
               <Link href="/">
                 <p className="text-lg font-medium hover:text-gray-500">Home</p>
               </Link>

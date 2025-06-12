@@ -1,6 +1,6 @@
 import React from "react";
 
-function MemberCard({ key, img, name, link }) {
+function MemberCard({ img, name, link }) {
   return (
     <div
       // class="flex items-center justify-center mt-12 "
